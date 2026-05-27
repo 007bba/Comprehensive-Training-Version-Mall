@@ -4,7 +4,7 @@
     <link href="../../static/css/style.css" rel="stylesheet" type="text/css" />
     <div class="cle cart_main">
       <div class="flowBox_cart">
-        <h6><span style="padding-left: 0px">确认订单信息页面</span></h6>
+        <h6><span>确认订单信息页面</span></h6>
         <div class="flowBox_in">
           <div class="flowBox">
             <h6>
@@ -53,7 +53,6 @@
             </h6>
             <table
               width="99%"
-              align="center"
               border="0"
               cellpadding="5"
               cellspacing="1"
@@ -61,15 +60,19 @@
             >
               <tbody>
                 <tr>
-                  <td bgcolor="#f5f5f5">收货人姓名:</td>
+                  <td bgcolor="#f5f5f5" width="15%" style="padding-left: 15px">收货人姓名</td>
                   <td bgcolor="#ffffff">{{ contact_name }}</td>
-                  <td bgcolor="#f5f5f5">详细地址:</td>
+                </tr>
+                <tr>
+                  <td bgcolor="#f5f5f5" style="padding-left: 15px">详细地址</td>
                   <td bgcolor="#ffffff">{{ address }}</td>
                 </tr>
                 <tr>
-                  <td bgcolor="#f5f5f5">手机:</td>
+                  <td bgcolor="#f5f5f5" style="padding-left: 15px">手机</td>
                   <td bgcolor="#ffffff">{{ contact_mobile }}</td>
-                  <td bgcolor="#f5f5f5">备用电话:</td>
+                </tr>
+                <tr>
+                  <td bgcolor="#f5f5f5" style="padding-left: 15px">备用电话</td>
                   <td bgcolor="#ffffff"></td>
                 </tr>
               </tbody>
@@ -80,7 +83,6 @@
             <h6><span>配送方式</span></h6>
             <table
               width="99%"
-              align="center"
               border="0"
               cellpadding="5"
               cellspacing="1"
@@ -88,12 +90,11 @@
               id="shippingTable"
             >
               <tbody>
-                <tr style="text-align: center">
-                  <th bgcolor="#f5f5f5" width="5%">&nbsp;</th>
-                  <th bgcolor="#f5f5f5" width="25%">名称</th>
+                <tr>
+                  <th bgcolor="#f5f5f5" style="text-align: left; padding-left: 15px">选项</th>
                 </tr>
                 <tr>
-                  <td bgcolor="#ffffff" align="center">
+                  <td bgcolor="#ffffff" style="padding-left: 15px">
                     <input
                       name="shipping"
                       type="radio"
@@ -102,11 +103,11 @@
                       insure="0"
                       checked
                     />
+                    <strong style="margin-left: 6px">全场包邮</strong>
                   </td>
-                  <td bgcolor="#ffffff"><strong>全场包邮</strong></td>
                 </tr>
                 <tr>
-                  <td bgcolor="#ffffff" align="center">
+                  <td bgcolor="#ffffff" style="padding-left: 15px">
                     <input
                       name="shipping"
                       type="radio"
@@ -115,11 +116,11 @@
                       insure="0"
                       disabled
                     />
+                    <strong style="margin-left: 6px">顺丰速运</strong>
                   </td>
-                  <td bgcolor="#ffffff"><strong>顺丰速运</strong></td>
                 </tr>
                 <tr>
-                  <td bgcolor="#ffffff" align="center">
+                  <td bgcolor="#ffffff" style="padding-left: 15px">
                     <input
                       name="shipping"
                       type="radio"
@@ -128,8 +129,8 @@
                       insure="0"
                       disabled
                     />
+                    <strong style="margin-left: 6px">圆通速递</strong>
                   </td>
-                  <td bgcolor="#ffffff"><strong>圆通速递</strong></td>
                 </tr>
               </tbody>
             </table>
@@ -140,7 +141,6 @@
             <h6><span>支付方式</span></h6>
             <table
               width="99%"
-              align="center"
               border="0"
               cellpadding="5"
               cellspacing="1"
@@ -149,12 +149,11 @@
             >
               <tbody>
                 <tr>
-                  <th width="5%" bgcolor="#ffff99">&nbsp;</th>
-                  <th width="20%" bgcolor="#ffff99">名称</th>
+                  <th bgcolor="#f5f5f5" style="text-align: left; padding-left: 15px">名称</th>
                 </tr>
 
                 <tr>
-                  <td bgcolor="#ffffff">
+                  <td bgcolor="#ffffff" style="padding-left: 15px">
                     <input
                       type="radio"
                       name="payment"
@@ -163,16 +162,12 @@
                       checked=""
                       iscod="0"
                     />
-                  </td>
-                  <td bgcolor="#ffffff">
-                    <label class="pay_label" for="pay_check_value_1"
-                      >支付宝</label
-                    >
+                    <label class="pay_label" for="pay_check_value_1" style="margin-left: 6px">支付宝</label>
                   </td>
                 </tr>
 
                 <tr>
-                  <td bgcolor="#ffffff">
+                  <td bgcolor="#ffffff" style="padding-left: 15px">
                     <input
                       type="radio"
                       name="payment"
@@ -180,11 +175,7 @@
                       id="pay_check_value_2"
                       iscod="0"
                     />
-                  </td>
-                  <td bgcolor="#ffffff">
-                    <label class="pay_label" for="pay_check_value_2"
-                      >微信支付</label
-                    >
+                    <label class="pay_label" for="pay_check_value_2" style="margin-left: 6px">微信支付</label>
                   </td>
                 </tr>
               </tbody>
