@@ -1,5 +1,5 @@
 {
-  "name": "myshop-vue",
+  "name": "unit",
   "version": "1.0.0",
   "description": "A Vue.js project",
   "author": "xjboy2018 <5794125@qq.com>",
@@ -64,5 +64,10 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "main": ".postcssrc.js",
+  "directories": {
+    "test": "test"
+  },
+  "license": "ISC"
 }

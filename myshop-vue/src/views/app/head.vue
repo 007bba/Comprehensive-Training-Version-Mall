@@ -50,13 +50,14 @@
     </div>
     <div class="hd_nav">
       <div class="hd_nav_bd cle">
-        <div          class="main_nav main_nav_hover"
+        <div
+          class="main_nav main_nav_hover"
           id="main_nav"
           @mouseover="overAllmenu"
           @mouseout="outAllmenu"
         >
           <div class="main_nav_link">
-            <a class="#">全部商品分类</a> <i class="iconfont"></i>
+            <span class="main_nav_title">全部商品分类</span> <i class="iconfont"></i>
           </div>
           <div class="main_cata" id="J_mainCata" v-show="showmenu">
             <ul>

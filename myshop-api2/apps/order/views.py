@@ -190,10 +190,11 @@ class OrderView(APIView):
 class PayOrderView(APIView):
     authentication_classes = (JSONWebTokenAuthentication, SessionAuthentication)
 
-    def post(self, request, order_id):
+    def post(self, request, order_id=None, pk=None):
         user = self.request.user
         if not user.is_authenticated:
             return CustomResponse(code=401, msg="401-UNAUTHORIZED", status=status.HTTP_401_UNAUTHORIZED)
+        order_id = order_id or pk
         try:
             order = Order.objects.get(id=order_id, user=user)
         except Order.DoesNotExist:
