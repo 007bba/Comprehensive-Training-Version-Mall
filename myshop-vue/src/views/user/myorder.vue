@@ -32,12 +32,13 @@
                       </td>
                       <td align="center" bgcolor="#ffffff">{{item.create_date}}</td>
                       <td align="right" bgcolor="#ffffff">￥{{item.order_price}}元</td>
-                      <td align="center" bgcolor="#ffffff">{{item.order_state}}</td>
+                      <td align="center" bgcolor="#ffffff">{{ getOrderStateText(item.order_state) }}</td>
                       <td align="center" bgcolor="#ffffff">
                         <font class="f6">
-                          <a href="#">
-                            取消订单
+                          <a v-if="item.order_state === 'paying'" @click="pay(item)">
+                            模拟支付
                           </a>
+                          <span v-else>-</span>
                         </font>
                       </td>
                     </tr>
@@ -62,7 +63,7 @@
 import myhead from '@/views/app/head';
 import myfooter from '@/views/app/footer';
   import left from '@/views/user/left';
-  import { getOrder } from '@/api/order'
+  import { getOrder, payOrder } from '@/api/order'
   export default {
     data() {
       return {
@@ -78,6 +79,25 @@ import myfooter from '@/views/app/footer';
           }
         }).catch(function (error) {
           console.log(error);
+        })
+      },
+      getOrderStateText(state) {
+        const stateMap = {
+          paying: "待支付",
+          payed: "已支付/待发货",
+          shipping: "配送中",
+          complete: "已完成",
+          cancel: "已取消",
+        };
+        return stateMap[state] || state;
+      },
+      pay(item) {
+        payOrder(item.id).then((response) => {
+          alert(response.data.msg || "支付成功");
+          this.getData();
+        }).catch(function (error) {
+          console.log(error);
+          alert("支付失败，请稍后再试");
         })
       },
     },

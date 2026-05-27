@@ -7,8 +7,8 @@
       <div class="top-next cle">
         <div class="fr">
           <a href="./" class="graybtn">继续购物</a>
-          <a href="flow.php?step=checkout" class="btn" id="checkout-top"
-            >&nbsp;去结算&nbsp;</a
+          <router-link to="/checkout" class="btn" id="checkout-top"
+            >&nbsp;去结算&nbsp;</router-link
           >
         </div>
       </div>
@@ -30,7 +30,7 @@
                 </a>
               </div>
               <div class="name">
-                <router-link :to="'/detail' + item.goods.id"
+                <router-link :to="'/detail/' + item.goods.id"
                   ><span style="color: #ff0000">{{
                     item.goods.name
                   }}</span></router-link
@@ -68,7 +68,7 @@
                   >￥{{ item.goods.price * item.goods_num }}元</em
                 >
               </div>
-              <div class="del"><a class="btn-del">删除</a></div>
+              <div class="del"><a class="btn-del" @click="remove(item.goods.id)">删除</a></div>
             </li>
           </ul>
         </div>
@@ -88,7 +88,7 @@
               >
             </p>
             <p>
-              <router-link :to="'checkout'" class="btn">去结算</router-link>
+              <router-link to="/checkout" class="btn">去结算</router-link>
             </p>
           </div>
         </div>
@@ -100,7 +100,7 @@
 <script>
 import myhead from "@/views/app/head";
 import myfooter from "@/views/app/footer";
-import { getCart, updateCart } from "@/api/order";
+import { getCart, updateCart, deleteCart } from "@/api/order";
 export default {
   data() {
     return {
@@ -141,10 +141,18 @@ export default {
       });
     },
     reduce(id, nums) {
+      if (nums <= 1) return;
       updateCart(id, { goods_num: nums - 1 }).then((response) => {
         console.log(response.data);
         this.getCart();
         //这里对购物车进行vuex处理
+        this.$store.dispatch("saveCart");
+      });
+    },
+    remove(id) {
+      deleteCart(id).then((response) => {
+        console.log(response.data);
+        this.getCart();
         this.$store.dispatch("saveCart");
       });
     },

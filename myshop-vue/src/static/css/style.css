@@ -596,7 +596,7 @@ canvas {
 	background-color:#000;
 	overflow:hidden
 }
-.hd_nav .main_nav .main_nav_link a {
+.hd_nav .main_nav .main_nav_link .main_nav_title {
 	display:block;
 	padding:7px 10px 0 0;
 	height:25px;
@@ -606,11 +606,7 @@ canvas {
 	color:#fff;
 	overflow:hidden
 }
-.hd_nav .main_nav .main_nav_link a:hover {
-	color:#fff;
-	text-decoration:none
-}
-.hd_nav .main_nav .main_nav_link a {
+.hd_nav .main_nav .main_nav_link i {
 	position:absolute;
 	top:10px;
 	right:50px;
@@ -622,7 +618,7 @@ canvas {
 	line-height:16px;
 	-webkit-backface-visibility:hidden
 }
-.hd_nav .main_nav_hover .main_nav_link a {
+.hd_nav .main_nav_hover .main_nav_link i {
 	-moz-transform:rotate(180deg);
 	-webkit-transform:rotate(180deg);
 	-ms-transform:rotate(180deg);
@@ -788,7 +784,7 @@ canvas {
 .main_cata ul {
 	width:214px;
 	padding:10px 0;
-	overflow:hidden;
+	overflow:visible;
 	background-color:#3b3b3b;
 	border-bottom:1px solid #ccc;
 	box-shadow:-2px 4px 4px rgba(200,200,200,0.3)
@@ -798,7 +794,8 @@ canvas {
 	height:35px;
 	line-height:35px;
 	border:none;
-	overflow:hidden;
+	overflow:visible;
+	position:relative;
 	font-size:0;
 }
 .main_cata li a {
@@ -851,10 +848,10 @@ canvas {
 	color:#09c762
 }
 .J_subCata {
-
-	top:35px;
-	left:100px;
-	z-index:1998;
+	position:absolute;
+	top:0;
+	left:214px;
+	z-index:2000;
 	-webkit-transition:all .2s ease;
 	-moz-transition:all .2s ease;
 	-ms-transition:all .2s ease;

@@ -139,7 +139,7 @@
                   <h4>
                     <router-link
                       target="_blank"
-                      :to="'detail' + item.goods.id"
+                      :to="'/detail/' + item.goods.id"
                       >{{ item.goods.name }}</router-link
                     >
                   </h4>
@@ -150,7 +150,7 @@
                   <a
                     class="iconfont del"
                     title="删除"
-                    href="javascript:deleteCartGoods(278);"
+                    @click="removeCart(item.goods.id)"
                     >Ť</a
                   >
                 </dd>
@@ -179,6 +179,7 @@
 <script>
 import { mapGetters } from "vuex";
 import { getGoodsCategory } from "@/api/goods";
+import { deleteCart } from "@/api/order";
 export default {
   data() {
     return {
@@ -221,6 +222,11 @@ export default {
       getGoodsCategory().then((response) => {
         //console.log(response.data.results);
         this.allMenu = response.data.data;
+      });
+    },
+    removeCart(id) {
+      deleteCart(id).then(() => {
+        this.$store.dispatch("saveCart");
       });
     },
     logout() {

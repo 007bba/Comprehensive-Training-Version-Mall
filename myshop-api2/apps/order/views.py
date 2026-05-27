@@ -187,6 +187,37 @@ class OrderView(APIView):
         order_sn = datetime.now().strftime('%Y%m%d%H%M%S') + str(self.request.user.id)
         return order_sn
 
+class PayOrderView(APIView):
+    authentication_classes = (JSONWebTokenAuthentication, SessionAuthentication)
+
+    def post(self, request, order_id):
+        user = self.request.user
+        if not user.is_authenticated:
+            return CustomResponse(code=401, msg="401-UNAUTHORIZED", status=status.HTTP_401_UNAUTHORIZED)
+        try:
+            order = Order.objects.get(id=order_id, user=user)
+        except Order.DoesNotExist:
+            return CustomResponse(code=404, msg="订单不存在", status=status.HTTP_404_NOT_FOUND)
+        if order.order_state == "payed":
+            return CustomResponse(code=400, msg="订单已支付，不能重复支付", status=status.HTTP_400_BAD_REQUEST)
+        if order.order_state == "cancel":
+            return CustomResponse(code=400, msg="订单已取消，不能支付", status=status.HTTP_400_BAD_REQUEST)
+        if order.order_state != "paying":
+            return CustomResponse(code=400, msg="当前订单状态不能支付", status=status.HTTP_400_BAD_REQUEST)
+        order.order_state = "payed"
+        order.save()
+        return CustomResponse(
+            data={
+                "id": order.id,
+                "order_sn": order.order_sn,
+                "order_price": order.order_price,
+                "order_state": order.order_state,
+            },
+            code=200,
+            msg="支付成功",
+            status=status.HTTP_200_OK,
+        )
+
 class OrderViewset(viewsets.ModelViewSet):
     '''
     购物车视图类
