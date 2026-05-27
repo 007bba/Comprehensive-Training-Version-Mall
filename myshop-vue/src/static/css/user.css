@@ -730,11 +730,14 @@ canvas {
 	width:110px
 }
 #header.new_header .search_box {
-	right:394px;
+	left:50%;
+	transform:translateX(-50%);
 	top:14px;
 	width:460px;
 	height:32px;
-	border-color:#09c762
+	border-color:#09c762;
+	border-radius:16px;
+	overflow:hidden
 }
 #header.new_header .search_box .sea_input {
 	margin:7px 8px 0;
