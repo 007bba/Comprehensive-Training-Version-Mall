@@ -1,0 +1,51 @@
+<script language="" src="../node_modules/vue/dist/vue.js"></script>
+<style>
+    ul {
+        margin: 10px;
+    }
+
+    li {
+        line-height: 30px;
+    }
+
+    p {
+        display: inline-block;
+    }
+
+    span {
+        border: 1px solid red;
+        color: red;
+        padding: 2px;
+        font-size: 12px;
+    }
+</style>
+<ul id='app'>
+    <li v-for="item in goodsList">
+        <p>{{item.title}}</p>
+        <span v-if="item.hot">火爆</span>
+    </li>
+</ul>
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            goodsList: [
+                {
+                    title: "哈密大枣",
+                    hot: true,
+                    id: 1
+                },
+                {
+                    title: "和田大枣",
+                    hot: true,
+                    id: 2
+                },
+                {
+                    title: "若羌枣",
+                    hot: false,
+                    id: 3
+                }
+            ]
+        }
+    });
+</script>

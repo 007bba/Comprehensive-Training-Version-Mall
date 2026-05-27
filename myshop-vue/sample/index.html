@@ -1,0 +1,60 @@
+<html>
+<head>
+<script language="" src="../node_modules/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+<table>
+<tr>
+<td>编号</td>
+<td>商品名称</td>
+<td>价格</td>
+<td>数量</td>
+<td>金额</td>
+</tr>
+<tr v-for="(book,index) in books" :key="book.id">
+<td>{{book.id}}</td>
+<td>{{book.title}}</td>
+<td>{{book.price}}</td>
+<td>
+<button v-bind:disabled="book.count ===0" v-on:click="book.count-=1">-</button>
+{{book.count}}
+<button v-on:click="book.count+=1">+</button>
+</td>
+<td>
+{{itemPrice(book.price,book.count)}}
+</td>
+<td>
+<button @click="deleteItem(index)">删除</button>
+</td>
+</table>
+<span>总价：{{totalPrice}}</span>
+</div>
+</body>
+<script>
+var app=new Vue({
+    el:"#app",
+    data:{
+        books:[
+        {
+            id:1,
+            title:"wwww",
+            price:100,
+            count:1
+        },
+        {
+        id:2,
+        title:"2222",
+        price:90,
+        count:2
+        }
+        ]
+    },
+    methods:{
+        itemPrice(price,count){
+            return price*count
+        }
+    }
+}
+)
+</script>

@@ -1,0 +1,18 @@
+<script language="" src="../node_modules/vue/dist/vue.js"></script>
+<div id="app">
+    <div v-if="picShow">True显示，False不显示</div>
+    <div v-if="score>=90 &&score<=100">优秀</div>
+    <div v-else-if="score>=70 &&score<90">良好</div>
+    <div v-else-if="score>=60 &&score<70">及格</div>
+    <div v-else-if="score>=0 &&score<60">不及格</div>
+    <div v-else>错误</div>
+</div>
+<script>
+    const app = new Vue({
+        el: "#app",
+        data: {
+            picShow: True,
+            score: 65
+        }
+    })
+</script>
