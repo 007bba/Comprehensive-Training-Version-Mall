@@ -98,6 +98,12 @@ class OrderView(APIView):
 
     @transaction.atomic
     def post(self,request):
+        user = self.request.user
+        if not user.is_authenticated:
+            return CustomResponse(code=401, msg="401-UNAUTHORIZED", status=status.HTTP_401_UNAUTHORIZED)
+        carts = Cart.objects.filter(user=request.user)
+        if not carts.exists():
+            return CustomResponse(code=400, msg="购物车为空，无法生成订单", status=status.HTTP_400_BAD_REQUEST)
         #订单编号
 
         order_sn=self.build_order_sn()
@@ -128,24 +134,9 @@ class OrderView(APIView):
             pay_method=pay_method,
             user=self.request.user,
         )
-        #从购物车找到商品id，然后在商品表判断库存是否够，如果不够，回滚操作并提示
-        carts=Cart.objects.filter(user=request.user)
+        # 购物车加入时已经占用库存，下单时只生成订单商品快照并增加销量
         for cart in carts:
-            try:
-            #悲观锁处理，啥都不干先加锁
-                goods=Goods.objects.select_for_update().get(id=cart.goods.id)
-            except Goods.DoesNoExist:
-                transaction.savepoint_rollback((save_id))
-                return Response({'code':'1001','msg':'没有找到编号为'+cart.goods.id+'的商品，无法购买，估计你下手慢了，卖空了','data':[]})
-            #如果购物车数量小于商品的库存量，则无法购买
-            if cart.goods_num>goods.stock_num:
-                transaction.savepoint_rollback((save_id))
-                return Response(
-                    {'code': '1002', 'msg': '编号为' + str(cart.goods.id) + '的商品库存不够，无法购买，请过段时间再试', 'data': []})
-
-            #商品库存减少
-            goods.stock_num-=cart.goods_num
-            #商品销量增加
+            goods=cart.goods
             goods.amount+=cart.goods_num
             goods.save()
 

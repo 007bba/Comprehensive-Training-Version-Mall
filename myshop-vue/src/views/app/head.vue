@@ -68,12 +68,7 @@
                 @mouseover="oversubmenu(index)"
                 @mouseout="outsubmenu(index)"
               >
-                <h3
-                  style="
-                    background: url(../../static/images/1449088957941770398.png)
-                      20px center no-repeat;
-                  "
-                >
+                <h3>
                   <router-link :to="'/list/' + item.id">{{
                     item.name
                   }}</router-link>

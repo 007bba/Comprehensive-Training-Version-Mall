@@ -52,6 +52,14 @@ export function payOrder(id) {
   return request({
     url: '/order/' + id + '/mock-pay/',
     method: 'post'
+  }).catch(error => {
+    if (error && error.status === 404) {
+      return request({
+        url: '/order/' + id + '/pay/',
+        method: 'post'
+      })
+    }
+    return Promise.reject(error)
   })
 }
 

@@ -294,7 +294,8 @@ export default {
             })
             .catch((error) => {
               console.log(error);
-              alert("支付失败，请稍后在我的订单中继续支付");
+              const message = error && error.msg ? error.msg : "支付失败，请稍后在我的订单中继续支付";
+              alert(message);
               this.$router.push({ path: "/myorder" });
             });
         })

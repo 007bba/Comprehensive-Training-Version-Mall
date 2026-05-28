@@ -805,8 +805,9 @@ canvas {
 	font-size:12px
 }
 .main_cata li h3 {
-	text-indent:58px;
-	text-align: left;
+	padding:0 16px;
+	text-indent:0;
+	text-align:left;
 }
 .main_cata li h3 a {
 	font-size:13px;

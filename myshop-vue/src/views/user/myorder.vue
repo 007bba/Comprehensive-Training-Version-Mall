@@ -97,7 +97,8 @@ import myfooter from '@/views/app/footer';
           this.getData();
         }).catch(function (error) {
           console.log(error);
-          alert("支付失败，请稍后再试");
+          const message = error && error.msg ? error.msg : "支付失败，请稍后再试";
+          alert(message);
         })
       },
     },
