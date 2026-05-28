@@ -24,5 +24,5 @@ urlpatterns = [
     path('docs2/', schema_view, name='docs'),
     path('', include('django_prometheus.urls')),
     re_path('media/(?P<path>.*)', serve, {"document_root": settings.MEDIA_ROOT}),
-    re_path('static/(?P<path>.*)', serve, {"document_root": 'static'}),
+    re_path('static/(?P<path>.*)', serve, {"document_root": settings.STATIC_ROOT}),
 ]
