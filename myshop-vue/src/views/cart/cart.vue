@@ -33,13 +33,13 @@
             :key="index"
           >
             <!-- 商品图片 -->
-            <router-link :to="'/detail' + item.goods.id" class="cart-card__img">
+            <router-link :to="'/detail/' + item.goods.id" class="cart-card__img">
               <img :alt="item.goods.name" :src="item.goods.main_img" />
             </router-link>
 
             <!-- 商品信息 -->
             <div class="cart-card__info">
-              <router-link :to="'/detail' + item.goods.id" class="cart-card__name">
+              <router-link :to="'/detail/' + item.goods.id" class="cart-card__name">
                 {{ item.goods.name }}
               </router-link>
               <p class="cart-card__unit-price">单价 ¥{{ item.goods.price }}</p>
@@ -73,7 +73,7 @@
             </p>
 
             <!-- 删除 -->
-            <button class="cart-card__del" type="button">删除</button>
+            <button class="cart-card__del" type="button" @click="remove(item.goods.id)">删除</button>
           </div>
         </div>
 
@@ -88,7 +88,7 @@
               <span id="selectedCount">{{ cart_lists.length }}</span> 件商品，合计：
               <strong id="totalSkuPrice">¥{{ this.allprice }}</strong>
             </p>
-            <router-link :to="'checkout'" class="cart-footer__checkout" id="checkout-top">
+            <router-link to="/checkout" class="cart-footer__checkout" id="checkout-top">
               去结算
             </router-link>
           </div>
@@ -102,7 +102,7 @@
 <script>
 import myhead from "@/views/app/head";
 import myfooter from "@/views/app/footer";
-import { getCart, updateCart } from "@/api/order";
+import { getCart, updateCart, deleteCart } from "@/api/order";
 export default {
   data() {
     return {
@@ -143,10 +143,18 @@ export default {
       });
     },
     reduce(id, nums) {
+      if (nums <= 1) return;
       updateCart(id, { goods_num: nums - 1 }).then((response) => {
         console.log(response.data);
         this.getCart();
         //这里对购物车进行vuex处理
+        this.$store.dispatch("saveCart");
+      });
+    },
+    remove(id) {
+      deleteCart(id).then((response) => {
+        console.log(response.data);
+        this.getCart();
         this.$store.dispatch("saveCart");
       });
     },

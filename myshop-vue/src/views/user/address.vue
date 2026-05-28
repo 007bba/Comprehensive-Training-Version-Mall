@@ -262,7 +262,7 @@
 import myhead from '@/views/app/head';
 import myfooter from '@/views/app/footer';
   import left from '@/views/user/left';
-  import { addAddress, getAddress, updateAddress } from '@/api/basic'
+  import { addAddress, getAddress, updateAddress, deleteAddress } from '@/api/basic'
   export default {
     data() {
       return {
@@ -309,14 +309,28 @@ import myfooter from '@/views/app/footer';
         addAddress(this.addinfo).then((response) => {
           console.log(response.data);
           this.getData();
-          this.addinfo=[];
+            this.addinfo = {
+              province: '',
+              city: '',
+              district: '',
+              address: '',
+              contact_name: '',
+              contact_mobile: '',
+              is_default: false
+            };
         }).catch(function (error) {
           alert(error)
           console.log(error);
         })
       },
       del(id) {
-
+        deleteAddress(id).then((response) => {
+          console.log(response.data);
+          this.getData();
+        }).catch(function (error) {
+          alert(error && error.msg ? error.msg : "删除失败")
+          console.log(error);
+        })
       }
     },
     created() {

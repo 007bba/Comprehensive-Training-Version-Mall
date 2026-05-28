@@ -10,7 +10,7 @@
           <div class="checkout-card">
             <div class="card-header">
               <h3 class="card-title">收货人信息</h3>
-              <a href="#" class="card-action">管理收货地址</a>
+              <router-link to="/address" class="card-action">管理收货地址</router-link>
             </div>
             <div class="card-body address-body">
               <div class="address-item">

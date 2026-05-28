@@ -1,4 +1,5 @@
 from pathlib import Path
+from urllib.parse import parse_qsl, urlparse
 import os
 import datetime
 
@@ -26,6 +27,35 @@ def env_list(name, default=None):
     if not value:
         return default or []
     return [item.strip() for item in value.split(",") if item.strip()]
+
+
+def database_from_url(url):
+    parsed = urlparse(url)
+    scheme = parsed.scheme
+    engine_map = {
+        'postgres': 'django.db.backends.postgresql',
+        'postgresql': 'django.db.backends.postgresql',
+        'mysql': 'django.db.backends.mysql',
+        'sqlite': 'django.db.backends.sqlite3',
+        'sqlite3': 'django.db.backends.sqlite3',
+    }
+    engine = engine_map.get(scheme)
+    if not engine:
+        raise ValueError(f'Unsupported DATABASE_URL scheme: {scheme}')
+    if engine == 'django.db.backends.sqlite3':
+        return {
+            'ENGINE': engine,
+            'NAME': parsed.path.lstrip('/') or BASE_DIR / 'db.sqlite3',
+        }
+    return {
+        'ENGINE': engine,
+        'NAME': parsed.path.lstrip('/'),
+        'USER': parsed.username or '',
+        'PASSWORD': parsed.password or '',
+        'HOST': parsed.hostname or '',
+        'PORT': str(parsed.port or ''),
+        'OPTIONS': dict(parse_qsl(parsed.query)),
+    }
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -122,12 +152,18 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'myshop.wsgi.application'
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+database_url = os.environ.get('DATABASE_URL')
+if database_url:
+    DATABASES = {
+        'default': database_from_url(database_url)
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
