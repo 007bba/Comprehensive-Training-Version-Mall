@@ -236,7 +236,7 @@
 import myhead from "@/views/app/head";
 import myfooter from "@/views/app/footer";
 import { mapGetters } from "vuex";
-import { addOrder } from "@/api/order";
+import { addOrder, payOrder } from "@/api/order";
 import { getAddress } from "@/api/basic";
 export default {
   data() {
@@ -275,19 +275,27 @@ export default {
         pay_method: this.pay_method,
       })
         .then((response) => {
-          console.log(response.data);
-          if (response.data.code == "200") {
-            alert(response.data.msg);
-            //这里对购物车进行vuex处理
-            this.$store.dispatch("saveCart");
-            this.$router.push({ name: "/myorder" });
-          } else {
+          if (response.data.code != "200") {
             alert(response.data.msg);
             return;
           }
+          const orderId = response.data.data.id;
+          return payOrder(orderId)
+            .then((payResponse) => {
+              alert(payResponse.data.msg || "支付成功");
+              this.$store.dispatch("saveCart");
+              this.$router.push({ path: "/myorder" });
+            })
+            .catch((error) => {
+              console.log(error);
+              const message = error && error.msg ? error.msg : "支付失败，请稍后在我的订单中继续支付";
+              alert(message);
+              this.$router.push({ path: "/myorder" });
+            });
         })
-        .catch(function (error) {
+        .catch((error) => {
           console.log(error);
+          alert("订单提交失败，请稍后再试");
         });
     },
     getAddressData() {
@@ -296,6 +304,10 @@ export default {
           console.log(response.data);
           if (response.status === 200) {
             this.address_lists = response.data.data;
+            if (!this.address_lists.length) {
+              alert("请先维护收货地址");
+              return;
+            }
             this.address =
               this.address_lists[0].province +
               this.address_lists[0].city +

@@ -13,7 +13,7 @@ service.interceptors.request.use(
   config => {
     const { url } = config
     //指定页面访问需要JWT认证。
-    if (url == '/cart/' || url == '/order/' || url == '/checkout/' || url == '/myorder/' || url.indexOf('address/') > 0 || url == 'profile/' || url.indexOf('users/')>0 ) {
+    if (url == '/cart/' || url == '/order/' || url.indexOf('/order/') == 0 || url == '/checkout/' || url == '/myorder/' || url.indexOf('address/') > 0 || url == 'profile/' || url.indexOf('users/')>0 ) {
       var jwt = localStorage.getItem('token');
       config.headers.Authorization = 'JWT  ' + jwt;
     }
