@@ -11,8 +11,8 @@ const state = {
 
 const mutations = {
   saveUser(state, value) {
-    state.userinfo = value,
-    localStorage.setItem('userinfo', value)
+    state.userinfo = value
+    localStorage.setItem('userinfo', JSON.stringify(value))
   },
   delUser(state) {
     state.userinfo = null;

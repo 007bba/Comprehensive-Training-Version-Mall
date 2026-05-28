@@ -145,8 +145,8 @@ export default {
       })
         .then((response) => {
           console.log(response.data);
-          if (response.data.code === 201) {
-            //跳转到登陆页面进行登陆
+          if (response.status === 201 || response.data.code === 201) {
+            alert("注册成功，请登录");
             this.$router.push({ name: "login" });
           }
         })

@@ -118,10 +118,14 @@ export default {
           }
         })
         .catch(function (error) {
-          if ("username" in error) {
+          if (error && "username" in error) {
             that.err_username = error.username[0];
-          } else if ("password" in error) {
+          } else if (error && "password" in error) {
             that.err_password = error.password[0];
+          } else if (error && "non_field_errors" in error) {
+            alert(error.non_field_errors[0]);
+          } else if (error && error.detail) {
+            alert(error.detail);
           } else {
             alert("登录失败");
           }
