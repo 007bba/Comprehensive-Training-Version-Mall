@@ -130,12 +130,12 @@ html body{ min-height:600px;}
 	cursor: text; 
 	zoom:1
 }
-.register_infor ul li.input_box .t_text {
-	position:absolute;
+.register_infor ul li.input_box input::placeholder {
 	color:#ccc;
-	left:14px;
-	top:0px;
 	font-size:14px;
+}
+.register_infor ul li.input_box input:focus::placeholder {
+	color:transparent;
 }
 .register_infor ul li.input_box .user_card,.register_infor ul li.input_box .pass_card {
 	display:none;
