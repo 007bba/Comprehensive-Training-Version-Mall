@@ -46,18 +46,23 @@ conda 24.x.x
 
 前端项目使用 Vue 2 + webpack 3，依赖相对较旧。推荐使用 Node.js 14.x 或 16.x，不建议直接使用过新的 Node.js 版本。
 
+推荐使用 Node.js 版本管理工具安装和切换 Node.js 版本：
+
+- macOS/Linux 推荐 nvm：https://github.com/nvm-sh/nvm
+- Windows 推荐 nvm-windows：https://github.com/coreybutler/nvm-windows
+
+安装版本管理工具后，可以安装并切换到 Node.js 14：
+
+```bash
+nvm install 14
+nvm use 14
+```
+
 检查 Node.js 与 npm：
 
 ```bash
 node -v
 npm -v
-```
-
-如果使用 nvm 管理 Node.js 版本，可以使用：
-
-```bash
-nvm install 14
-nvm use 14
 ```
 
 ## 后端部署与启动
