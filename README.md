@@ -151,7 +151,7 @@ DATABASE_URL=sqlite:///db.sqlite3
 ```text
 myshop-api2/db.sqlite3
 ```
-
+已经有postgresql的配置了，就在env文件中配好了，可以不用管。
 如果使用 PostgreSQL，例如 Supabase，可以配置：
 
 ```env
