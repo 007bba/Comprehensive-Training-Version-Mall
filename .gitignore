@@ -45,6 +45,8 @@ db.sqlite3
 node_modules/
 myshop-vue/dist/
 myshop-vue/test/unit/coverage/
+myshop-merchant-vue/node_modules/
+myshop-merchant-vue/dist/
 
 # Local backup of previous nested repositories
 .git-backup*/

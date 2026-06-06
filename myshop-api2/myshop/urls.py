@@ -16,6 +16,7 @@ urlpatterns = [
     path('',include('apps.goods.urls')),
     path('',include('apps.order.urls')),
     path('',include('apps.users.urls')),
+    path('merchant/',include('apps.merchant.urls')),
 
     path('ckeditor/',include('ckeditor_uploader.urls')),
     path('api-token-auth/', obtain_auth_token),

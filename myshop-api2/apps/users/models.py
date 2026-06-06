@@ -13,10 +13,16 @@ class MyUser(AbstractUser):
         (3,'金卡会员'),
         (4,'银卡会员'),
     )
+    ROLE=(
+        (0, '买家'),
+        (1, '商家'),
+    )
     STATUS=(
         (0,'正常'),
         (1,'异常'),
     )
+
+    role=models.IntegerField(default=0,choices=ROLE,verbose_name='用户角色')
 
     truename=models.CharField('真实姓名',blank=True,max_length=50)
     mobile=models.CharField('手机号码',max_length=11,default="")
