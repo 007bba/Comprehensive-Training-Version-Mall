@@ -1,0 +1,10 @@
+
+1、工程myshop-vue包含第11章的源代码。
+
+2、运行工程myshop-vue
+npm install
+num run dev
+
+
+
+

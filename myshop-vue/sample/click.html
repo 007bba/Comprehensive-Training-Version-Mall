@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <script language="" src="../node_modules/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <button v-on:click="counter += 1">Add 1</button>
+        <p>点击次数： {{ counter }} </p>
+        <button @click="clickMe">click me</button>
+    </div>
+    <script language="">
+        var vm = new Vue({
+            el: "#app",
+            data: {
+                counter: 0
+            },
+            methods: {
+                clickMe() {
+                    console.log('我是methods中的方法 clikMe')
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

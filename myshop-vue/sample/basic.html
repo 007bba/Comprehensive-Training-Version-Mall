@@ -1,0 +1,21 @@
+<html>
+<head>
+    <!--引入Vue.js库-->
+    <script language="" src="../node_modules/vue/dist/vue.js"></script>
+</head>
+<!--定义id="app"的div标签-->
+<body>
+    <div id="app">
+        <h1>{{message}}</h1><!--显示数据-->
+    </div>
+</body>
+<script language="">
+    //实例化Vue.js应用
+    var vm = new Vue({
+        el: "#app",
+        data: {
+            message: "hello vue",
+        }
+    })
+</script>
+</html>
