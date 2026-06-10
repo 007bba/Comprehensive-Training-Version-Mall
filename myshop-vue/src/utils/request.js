@@ -5,7 +5,7 @@ var URL = process.env.API_BASE_URL || 'http://localhost:8000/'
 // 创建 axios 实例
 const service = axios.create({
   baseURL: URL,
-  timeout: 6000 // 请求超时时间
+  timeout: 20000 // Supabase 连接首次查询可能较慢，避免用户端误判超时
 })
 
 // request拦截器
@@ -31,12 +31,12 @@ service.interceptors.response.use(
     return response
   },
   error => {
-    console.log(error.response)
+    console.log(error.response || error)
     //授权验证失败
-    if (error.response.status === 401) {
+    if (error.response && error.response.status === 401) {
       alert('请先登录！');
     }
-    return Promise.reject(error.response.data)
+    return Promise.reject(error.response ? error.response.data : error)
   }
 )
 

@@ -6,6 +6,10 @@ Vue.use(Router) //Vue全局使用Router
 //路由配置的定义，只有export后，其他地方才能import进来
 export default new Router({
   routes: [
+    {
+      path: '/',
+      redirect: '/index'
+    },
     //当访问跟路径时，会链接到HelloWorld.vue组件
     {
       path: '/hello',

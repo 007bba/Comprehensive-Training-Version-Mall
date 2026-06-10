@@ -1,0 +1,190 @@
+- generic [ref=e539]:
+  - banner [ref=e540]:
+    - generic [ref=e542]:
+      - generic [ref=e543]: 一方水土,一味家乡
+      - list [ref=e544]:
+        - listitem [ref=e545]:
+          - link "demo_merchant" [ref=e546] [cursor=pointer]:
+            - /url: "#/profile"
+        - listitem [ref=e547]:
+          - generic [ref=e548] [cursor=pointer]: 退出
+        - listitem [ref=e549]
+        - listitem [ref=e550]:
+          - link "会员中心" [ref=e551] [cursor=pointer]:
+            - /url: "#/profile"
+            - img [ref=e552]
+            - text: 会员中心
+        - listitem [ref=e554]:
+          - link "我的订单" [ref=e555] [cursor=pointer]:
+            - /url: "#/myorder"
+            - img [ref=e556]
+            - text: 我的订单
+        - listitem [ref=e558]:
+          - link "收货地址" [ref=e559] [cursor=pointer]:
+            - /url: "#/address"
+            - img [ref=e560]
+            - text: 收货地址
+    - generic [ref=e564]:
+      - link "特产小店" [ref=e565] [cursor=pointer]:
+        - /url: "#/index"
+      - generic [ref=e566]:
+        - img [ref=e567]
+        - textbox "搜一搜你想念的味道" [ref=e570]
+        - button "搜索" [ref=e571] [cursor=pointer]
+      - link "购物车" [ref=e573] [cursor=pointer]:
+        - /url: "#/checkout"
+        - img [ref=e574]
+        - generic [ref=e577]: 购物车
+    - generic [ref=e579]:
+      - generic [ref=e581] [cursor=pointer]: 全部商品分类
+      - list [ref=e582]:
+        - listitem [ref=e583]:
+          - link "首页" [ref=e584] [cursor=pointer]:
+            - /url: "#/index"
+  - generic [ref=e585]:
+    - navigation [ref=e586]:
+      - link "首页" [ref=e587] [cursor=pointer]:
+        - /url: .
+      - text: /
+      - link "全部商品" [ref=e588] [cursor=pointer]:
+        - /url: "#/list/0"
+    - generic [ref=e589]:
+      - complementary [ref=e590]:
+        - heading "全部商品 商品共0件" [level=3] [ref=e593]:
+          - link "全部商品 商品共0件" [ref=e594] [cursor=pointer]:
+            - /url: category.php?id=2
+            - strong [ref=e595]: 全部商品
+            - text: 商品共0件
+      - generic [ref=e596]:
+        - generic [ref=e597]:
+          - heading "价格筛选" [level=3] [ref=e599]
+          - generic [ref=e600]:
+            - generic [ref=e601]:
+              - button "¥10 - ¥60" [ref=e602] [cursor=pointer]
+              - button "¥60 - ¥110" [ref=e603] [cursor=pointer]
+              - button "¥110 - ¥160" [ref=e604] [cursor=pointer]
+              - button "¥160 - ¥210" [ref=e605] [cursor=pointer]
+            - generic [ref=e606]:
+              - generic [ref=e607]: 自定义
+              - textbox "最低价" [ref=e608]
+              - generic [ref=e609]: —
+              - textbox "最高价" [ref=e610]
+              - button "确定" [ref=e611] [cursor=pointer]
+        - generic [ref=e612]:
+          - button "销量" [ref=e613] [cursor=pointer]:
+            - text: 销量
+            - img [ref=e615]
+          - button "价格" [ref=e617] [cursor=pointer]:
+            - text: 价格
+            - img [ref=e619]
+          - generic [ref=e621]: 共 20 件商品
+        - generic [ref=e622]:
+          - link "甜瓜 甜瓜 ¥10.50 销量 0 件" [ref=e624] [cursor=pointer]:
+            - /url: "#/detail/2"
+            - img "甜瓜" [ref=e626]
+            - heading "甜瓜" [level=3] [ref=e627]
+            - paragraph [ref=e628]: ¥10.50
+            - paragraph [ref=e629]: 销量 0 件
+          - link "哈密瓜 哈密瓜 ¥9.90 销量 0 件" [ref=e631] [cursor=pointer]:
+            - /url: "#/detail/3"
+            - img "哈密瓜" [ref=e633]
+            - heading "哈密瓜" [level=3] [ref=e634]
+            - paragraph [ref=e635]: ¥9.90
+            - paragraph [ref=e636]: 销量 0 件
+          - link "火龙果 火龙果 ¥12.30 销量 0 件" [ref=e638] [cursor=pointer]:
+            - /url: "#/detail/4"
+            - img "火龙果" [ref=e640]
+            - heading "火龙果" [level=3] [ref=e641]
+            - paragraph [ref=e642]: ¥12.30
+            - paragraph [ref=e643]: 销量 0 件
+          - link "榴莲 榴莲 ¥13.50 销量 0 件" [ref=e645] [cursor=pointer]:
+            - /url: "#/detail/5"
+            - img "榴莲" [ref=e647]
+            - heading "榴莲" [level=3] [ref=e648]
+            - paragraph [ref=e649]: ¥13.50
+            - paragraph [ref=e650]: 销量 0 件
+          - link "大白菜 大白菜 ¥9.60 销量 0 件" [ref=e652] [cursor=pointer]:
+            - /url: "#/detail/6"
+            - img "大白菜" [ref=e654]
+            - heading "大白菜" [level=3] [ref=e655]
+            - paragraph [ref=e656]: ¥9.60
+            - paragraph [ref=e657]: 销量 0 件
+          - link "白菜 白菜 ¥4.80 销量 0 件" [ref=e659] [cursor=pointer]:
+            - /url: "#/detail/7"
+            - img "白菜" [ref=e661]
+            - heading "白菜" [level=3] [ref=e662]
+            - paragraph [ref=e663]: ¥4.80
+            - paragraph [ref=e664]: 销量 0 件
+          - link "结球甘蓝 结球甘蓝 ¥6.00 销量 0 件" [ref=e666] [cursor=pointer]:
+            - /url: "#/detail/8"
+            - img "结球甘蓝" [ref=e668]
+            - heading "结球甘蓝" [level=3] [ref=e669]
+            - paragraph [ref=e670]: ¥6.00
+            - paragraph [ref=e671]: 销量 0 件
+          - link "菠萝 菠萝 ¥9.90 销量 0 件" [ref=e673] [cursor=pointer]:
+            - /url: "#/detail/1"
+            - img "菠萝" [ref=e675]
+            - heading "菠萝" [level=3] [ref=e676]
+            - paragraph [ref=e677]: ¥9.90
+            - paragraph [ref=e678]: 销量 0 件
+        - list [ref=e681]:
+          - listitem [ref=e682]: 首页 上一页 123 下一页 尾页
+  - contentinfo [ref=e683]:
+    - paragraph [ref=e684]: 把好物,慢慢交给懂的人。
+    - generic [ref=e685]:
+      - generic [ref=e686]:
+        - heading "关于我们" [level=4] [ref=e687]
+        - list [ref=e688]:
+          - listitem [ref=e689]:
+            - link "品牌故事" [ref=e690] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e691]:
+            - link "产地溯源" [ref=e692] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e693]:
+            - link "人才招聘" [ref=e694] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e695]:
+            - link "联系我们" [ref=e696] [cursor=pointer]:
+              - /url: "#"
+      - generic [ref=e697]:
+        - heading "客户服务" [level=4] [ref=e698]
+        - list [ref=e699]:
+          - listitem [ref=e700]:
+            - link "配送说明" [ref=e701] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e702]:
+            - link "退换货政策" [ref=e703] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e704]:
+            - link "常见问题" [ref=e705] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e706]:
+            - link "免责条款" [ref=e707] [cursor=pointer]:
+              - /url: "#"
+      - generic [ref=e708]:
+        - heading "关注我们" [level=4] [ref=e709]
+        - list [ref=e710]:
+          - listitem [ref=e711]:
+            - link "微信" [ref=e712] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e713]
+              - generic [ref=e716]: 微信
+          - listitem [ref=e717]:
+            - link "微博" [ref=e718] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e719]
+              - generic [ref=e722]: 微博
+          - listitem [ref=e723]:
+            - link "小红书" [ref=e724] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e725]
+              - generic [ref=e728]: 小红书
+        - paragraph [ref=e729]: 服务时间 10:00 — 23:00
+      - generic [ref=e730]:
+        - heading "订阅时令信物" [level=4] [ref=e731]
+        - paragraph [ref=e732]: 每月一封,只讲产地、节气与餐桌
+        - generic [ref=e733]:
+          - textbox "请输入你的邮箱" [ref=e734]
+          - button "订阅" [ref=e735] [cursor=pointer]
+    - paragraph [ref=e737]: © 2021—2026 特产小店 · 版权所有 · 服务时间 10:00—23:00

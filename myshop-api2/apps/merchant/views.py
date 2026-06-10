@@ -1,10 +1,17 @@
+import os
+from uuid import uuid4
+
+from django.core.files.storage import default_storage
 from django.db.models import Sum, Count
 from django.shortcuts import get_object_or_404
 from rest_framework import viewsets, status, mixins
 from rest_framework.decorators import action
+from rest_framework.pagination import PageNumberPagination
+from rest_framework.parsers import FormParser, MultiPartParser
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.authentication import SessionAuthentication
+from rest_framework.views import APIView
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 
 from apps.goods.models import Goods, GoodsCategory
@@ -20,6 +27,12 @@ from .serializers import (
 )
 from .permissions import IsMerchant, IsShopOwner
 from common.customresponse import CustomResponse
+
+
+class MerchantPagePagination(PageNumberPagination):
+    page_size = 10
+    page_size_query_param = 'page_size'
+    max_page_size = 100
 
 
 # ==================== 商家注册 ====================
@@ -46,6 +59,43 @@ class ShopViewSet(viewsets.ModelViewSet):
         serializer.save(merchant=self.request.user)
 
 
+class MerchantLogoUploadView(APIView):
+    """商家店铺 Logo 上传"""
+    permission_classes = (IsAuthenticated, IsMerchant)
+    authentication_classes = (JSONWebTokenAuthentication, SessionAuthentication)
+    parser_classes = (MultiPartParser, FormParser)
+
+    allowed_extensions = ('.jpg', '.jpeg', '.png')
+    allowed_content_types = ('image/jpeg', 'image/png')
+    max_size = 2 * 1024 * 1024
+
+    def post(self, request, *args, **kwargs):
+        upload_file = request.FILES.get('file')
+        if not upload_file:
+            return CustomResponse(code=400, msg='请上传图片文件', status=status.HTTP_400_BAD_REQUEST)
+
+        ext = os.path.splitext(upload_file.name)[1].lower()
+        content_type = getattr(upload_file, 'content_type', '')
+        if ext not in self.allowed_extensions or content_type not in self.allowed_content_types:
+            return CustomResponse(code=400, msg='仅支持 JPG/PNG 格式图片', status=status.HTTP_400_BAD_REQUEST)
+
+        if upload_file.size > self.max_size:
+            return CustomResponse(code=400, msg='图片大小不能超过 2MB', status=status.HTTP_400_BAD_REQUEST)
+
+        file_path = f'shop/logo/{request.user.id}/{uuid4().hex}{ext}'
+        saved_path = default_storage.save(file_path, upload_file)
+        url = default_storage.url(saved_path)
+        if request:
+            url = request.build_absolute_uri(url)
+
+        return CustomResponse(
+            data={'url': url, 'path': saved_path},
+            code=200,
+            msg='上传成功',
+            status=status.HTTP_200_OK
+        )
+
+
 # ==================== 商家商品管理 ====================
 
 class MerchantGoodsViewSet(viewsets.ModelViewSet):
@@ -53,9 +103,14 @@ class MerchantGoodsViewSet(viewsets.ModelViewSet):
     serializer_class = MerchantGoodsSerializer
     permission_classes = (IsAuthenticated, IsMerchant)
     authentication_classes = (JSONWebTokenAuthentication, SessionAuthentication)
+    pagination_class = MerchantPagePagination
 
     def get_queryset(self):
-        return Goods.objects.filter(user=self.request.user)
+        queryset = Goods.objects.filter(user=self.request.user).order_by('-createDate', '-id')
+        search = self.request.query_params.get('search')
+        if search:
+            queryset = queryset.filter(name__icontains=search.strip())
+        return queryset
 
     def perform_create(self, serializer):
         serializer.save(user=self.request.user)

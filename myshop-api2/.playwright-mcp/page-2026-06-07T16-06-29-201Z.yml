@@ -1,0 +1,512 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]: 一方水土,一味家乡
+      - list [ref=e8]:
+        - listitem [ref=e9]:
+          - link "demo_merchant" [ref=e10] [cursor=pointer]:
+            - /url: "#/profile"
+        - listitem [ref=e11]:
+          - generic [ref=e12] [cursor=pointer]: 退出
+        - listitem [ref=e13]
+        - listitem [ref=e14]:
+          - link "会员中心" [ref=e15] [cursor=pointer]:
+            - /url: "#/profile"
+            - img [ref=e16]
+            - text: 会员中心
+        - listitem [ref=e18]:
+          - link "我的订单" [ref=e19] [cursor=pointer]:
+            - /url: "#/myorder"
+            - img [ref=e20]
+            - text: 我的订单
+        - listitem [ref=e22]:
+          - link "收货地址" [ref=e23] [cursor=pointer]:
+            - /url: "#/address"
+            - img [ref=e24]
+            - text: 收货地址
+    - generic [ref=e28]:
+      - link "特产小店" [ref=e29] [cursor=pointer]:
+        - /url: "#/index"
+      - generic [ref=e30]:
+        - img [ref=e31]
+        - textbox "搜一搜你想念的味道" [ref=e34]
+        - button "搜索" [ref=e35] [cursor=pointer]
+      - link "购物车" [ref=e37] [cursor=pointer]:
+        - /url: "#/checkout"
+        - img [ref=e38]
+        - generic [ref=e41]: 购物车
+    - generic [ref=e43]:
+      - generic [ref=e45] [cursor=pointer]: 全部商品分类
+      - list [ref=e46]:
+        - listitem [ref=e47]:
+          - link "首页" [ref=e48] [cursor=pointer]:
+            - /url: "#/index"
+  - main [ref=e49]:
+    - generic [ref=e51]:
+      - generic:
+        - button "Previous slide" [ref=e52] [cursor=pointer]
+        - button "Next slide" [ref=e53] [cursor=pointer]
+    - generic [ref=e55]:
+      - generic [ref=e56]:
+        - img [ref=e58]
+        - generic [ref=e60]:
+          - heading "产地直采" [level=4] [ref=e61]
+          - paragraph [ref=e62]: 跳过中间商
+      - generic [ref=e63]:
+        - img [ref=e65]
+        - generic [ref=e68]:
+          - heading "时令现摘" [level=4] [ref=e69]
+          - paragraph [ref=e70]: 不卖隔年陈货
+      - generic [ref=e71]:
+        - img [ref=e73]
+        - generic [ref=e77]:
+          - heading "48 小时直发" [level=4] [ref=e78]
+          - paragraph [ref=e79]: 顺丰冷链
+      - generic [ref=e80]:
+        - img [ref=e82]
+        - generic [ref=e85]:
+          - heading "不好吃可退" [level=4] [ref=e86]
+          - paragraph [ref=e87]: 七天无忧
+    - generic [ref=e88]:
+      - generic [ref=e89]:
+        - generic [ref=e90]:
+          - heading "时令鲜货" [level=2] [ref=e91]
+          - paragraph [ref=e92]: SEASONAL · 编辑推荐
+        - link "查看全部" [ref=e93] [cursor=pointer]:
+          - /url: "#/list/0"
+          - text: 查看全部
+          - generic [ref=e94]: →
+      - generic [ref=e95]:
+        - article [ref=e96]:
+          - link "武夷山炭焙肉桂 武夷山炭焙肉桂 桂皮香深沉,岩骨花香,五月新焙" [ref=e97] [cursor=pointer]:
+            - /url: "#/detail/1"
+            - img "武夷山炭焙肉桂" [ref=e99]
+            - heading "武夷山炭焙肉桂" [level=3] [ref=e100]
+            - paragraph [ref=e101]: 桂皮香深沉,岩骨花香,五月新焙
+          - generic [ref=e102]:
+            - paragraph [ref=e103]: ¥168
+            - button "加入购物车 武夷山炭焙肉桂" [ref=e104] [cursor=pointer]:
+              - img [ref=e105]
+        - article [ref=e108]:
+          - link "云南古树普洱生饼 云南古树普洱生饼 三百年老树,布朗山头春茶,357 克" [ref=e109] [cursor=pointer]:
+            - /url: "#/detail/2"
+            - img "云南古树普洱生饼" [ref=e111]
+            - heading "云南古树普洱生饼" [level=3] [ref=e112]
+            - paragraph [ref=e113]: 三百年老树,布朗山头春茶,357 克
+          - generic [ref=e114]:
+            - paragraph [ref=e115]: ¥298
+            - button "加入购物车 云南古树普洱生饼" [ref=e116] [cursor=pointer]:
+              - img [ref=e117]
+        - article [ref=e120]:
+          - link "潮州手工老梅 潮州手工老梅 老树梅,带核生晒,微酸回甘" [ref=e121] [cursor=pointer]:
+            - /url: "#/detail/3"
+            - img "潮州手工老梅" [ref=e123]
+            - heading "潮州手工老梅" [level=3] [ref=e124]
+            - paragraph [ref=e125]: 老树梅,带核生晒,微酸回甘
+          - generic [ref=e126]:
+            - paragraph [ref=e127]: ¥58
+            - button "加入购物车 潮州手工老梅" [ref=e128] [cursor=pointer]:
+              - img [ref=e129]
+        - article [ref=e132]:
+          - link "徽州石臼黑芝麻糖 徽州石臼黑芝麻糖 古法石臼,只用桂花蜜,薄而不脆" [ref=e133] [cursor=pointer]:
+            - /url: "#/detail/4"
+            - img "徽州石臼黑芝麻糖" [ref=e135]
+            - heading "徽州石臼黑芝麻糖" [level=3] [ref=e136]
+            - paragraph [ref=e137]: 古法石臼,只用桂花蜜,薄而不脆
+          - generic [ref=e138]:
+            - paragraph [ref=e139]: ¥42
+            - button "加入购物车 徽州石臼黑芝麻糖" [ref=e140] [cursor=pointer]:
+              - img [ref=e141]
+        - article [ref=e144]:
+          - link "广西六堡老茶 广西六堡老茶 梧州木仓,慢发酵十二年,槟榔香" [ref=e145] [cursor=pointer]:
+            - /url: "#/detail/5"
+            - img "广西六堡老茶" [ref=e147]
+            - heading "广西六堡老茶" [level=3] [ref=e148]
+            - paragraph [ref=e149]: 梧州木仓,慢发酵十二年,槟榔香
+          - generic [ref=e150]:
+            - paragraph [ref=e151]: ¥228
+            - button "加入购物车 广西六堡老茶" [ref=e152] [cursor=pointer]:
+              - img [ref=e153]
+        - article [ref=e156]:
+          - link "潜山雪枣干 潜山雪枣干 皖南灰枣,日晒七天,无糖无蜜" [ref=e157] [cursor=pointer]:
+            - /url: "#/detail/6"
+            - img "潜山雪枣干" [ref=e159]
+            - heading "潜山雪枣干" [level=3] [ref=e160]
+            - paragraph [ref=e161]: 皖南灰枣,日晒七天,无糖无蜜
+          - generic [ref=e162]:
+            - paragraph [ref=e163]: ¥78
+            - button "加入购物车 潜山雪枣干" [ref=e164] [cursor=pointer]:
+              - img [ref=e165]
+    - generic [ref=e169]:
+      - link "六堡茶,在广西的山雾里慢慢老去" [ref=e170] [cursor=pointer]:
+        - /url: "#"
+        - img "六堡茶,在广西的山雾里慢慢老去" [ref=e171]
+      - generic [ref=e172]:
+        - paragraph [ref=e173]: PRODUCER · 匠人故事
+        - heading "六堡茶,在广西的山雾里慢慢老去" [level=2] [ref=e174]
+        - paragraph [ref=e175]: 梧州 · 六堡镇 · 老韦
+        - paragraph [ref=e176]: 二十年前老韦从父亲手里接过这间木仓,茶叶在桂北的潮气里安静呼吸,十二个春夏秋冬,从青涩到沉郁。他说,茶不急,我也不急——这是我们想交给你的味道。
+        - link "阅读匠人故事" [ref=e177] [cursor=pointer]:
+          - /url: "#"
+          - text: 阅读匠人故事
+          - generic [ref=e178]: →
+    - generic [ref=e179]:
+      - generic [ref=e180]:
+        - generic [ref=e181]:
+          - generic [ref=e182]:
+            - heading "新鲜果蔬" [level=2] [ref=e183]
+            - paragraph [ref=e184]:
+              - link "时令水果" [ref=e185] [cursor=pointer]:
+                - /url: "#/list/9"
+              - link "·新鲜蔬菜" [ref=e186] [cursor=pointer]:
+                - /url: "#/list/10"
+              - link "·瓜果豆类" [ref=e187] [cursor=pointer]:
+                - /url: "#/list/11"
+          - link "查看全部" [ref=e188] [cursor=pointer]:
+            - /url: "#/list/1"
+            - text: 查看全部
+            - generic [ref=e189]: →
+        - generic [ref=e190]:
+          - article [ref=e191]:
+            - link "菠萝 菠萝" [ref=e192] [cursor=pointer]:
+              - /url: "#/detail/1"
+              - img "菠萝" [ref=e194]
+              - heading "菠萝" [level=3] [ref=e195]
+            - generic [ref=e196]:
+              - paragraph [ref=e197]: ¥9.90
+              - button "加入购物车 菠萝" [ref=e198] [cursor=pointer]:
+                - img [ref=e199]
+          - article [ref=e202]:
+            - link "甜瓜 甜瓜" [ref=e203] [cursor=pointer]:
+              - /url: "#/detail/2"
+              - img "甜瓜" [ref=e205]
+              - heading "甜瓜" [level=3] [ref=e206]
+            - generic [ref=e207]:
+              - paragraph [ref=e208]: ¥10.50
+              - button "加入购物车 甜瓜" [ref=e209] [cursor=pointer]:
+                - img [ref=e210]
+          - article [ref=e213]:
+            - link "哈密瓜 哈密瓜" [ref=e214] [cursor=pointer]:
+              - /url: "#/detail/3"
+              - img "哈密瓜" [ref=e216]
+              - heading "哈密瓜" [level=3] [ref=e217]
+            - generic [ref=e218]:
+              - paragraph [ref=e219]: ¥9.90
+              - button "加入购物车 哈密瓜" [ref=e220] [cursor=pointer]:
+                - img [ref=e221]
+          - article [ref=e224]:
+            - link "火龙果 火龙果" [ref=e225] [cursor=pointer]:
+              - /url: "#/detail/4"
+              - img "火龙果" [ref=e227]
+              - heading "火龙果" [level=3] [ref=e228]
+            - generic [ref=e229]:
+              - paragraph [ref=e230]: ¥12.30
+              - button "加入购物车 火龙果" [ref=e231] [cursor=pointer]:
+                - img [ref=e232]
+          - article [ref=e235]:
+            - link "榴莲 榴莲" [ref=e236] [cursor=pointer]:
+              - /url: "#/detail/5"
+              - img "榴莲" [ref=e238]
+              - heading "榴莲" [level=3] [ref=e239]
+            - generic [ref=e240]:
+              - paragraph [ref=e241]: ¥13.50
+              - button "加入购物车 榴莲" [ref=e242] [cursor=pointer]:
+                - img [ref=e243]
+          - article [ref=e246]:
+            - link "大白菜 大白菜" [ref=e247] [cursor=pointer]:
+              - /url: "#/detail/6"
+              - img "大白菜" [ref=e249]
+              - heading "大白菜" [level=3] [ref=e250]
+            - generic [ref=e251]:
+              - paragraph [ref=e252]: ¥9.60
+              - button "加入购物车 大白菜" [ref=e253] [cursor=pointer]:
+                - img [ref=e254]
+          - article [ref=e257]:
+            - link "白菜 白菜" [ref=e258] [cursor=pointer]:
+              - /url: "#/detail/7"
+              - img "白菜" [ref=e260]
+              - heading "白菜" [level=3] [ref=e261]
+            - generic [ref=e262]:
+              - paragraph [ref=e263]: ¥4.80
+              - button "加入购物车 白菜" [ref=e264] [cursor=pointer]:
+                - img [ref=e265]
+          - article [ref=e268]:
+            - link "结球甘蓝 结球甘蓝" [ref=e269] [cursor=pointer]:
+              - /url: "#/detail/8"
+              - img "结球甘蓝" [ref=e271]
+              - heading "结球甘蓝" [level=3] [ref=e272]
+            - generic [ref=e273]:
+              - paragraph [ref=e274]: ¥6.00
+              - button "加入购物车 结球甘蓝" [ref=e275] [cursor=pointer]:
+                - img [ref=e276]
+          - article [ref=e279]:
+            - link "紫甘蓝 紫甘蓝" [ref=e280] [cursor=pointer]:
+              - /url: "#/detail/9"
+              - img "紫甘蓝" [ref=e282]
+              - heading "紫甘蓝" [level=3] [ref=e283]
+            - generic [ref=e284]:
+              - paragraph [ref=e285]: ¥6.00
+              - button "加入购物车 紫甘蓝" [ref=e286] [cursor=pointer]:
+                - img [ref=e287]
+          - article [ref=e290]:
+            - link "花椰菜 花椰菜" [ref=e291] [cursor=pointer]:
+              - /url: "#/detail/10"
+              - img "花椰菜" [ref=e293]
+              - heading "花椰菜" [level=3] [ref=e294]
+            - generic [ref=e295]:
+              - paragraph [ref=e296]: ¥5.40
+              - button "加入购物车 花椰菜" [ref=e297] [cursor=pointer]:
+                - img [ref=e298]
+      - generic [ref=e301]:
+        - generic [ref=e302]:
+          - generic [ref=e303]:
+            - heading "粮油米面" [level=2] [ref=e304]
+            - paragraph [ref=e305]:
+              - link "大米" [ref=e306] [cursor=pointer]:
+                - /url: "#/list/12"
+              - link "·面粉杂粮" [ref=e307] [cursor=pointer]:
+                - /url: "#/list/13"
+              - link "·食用油" [ref=e308] [cursor=pointer]:
+                - /url: "#/list/14"
+          - link "查看全部" [ref=e309] [cursor=pointer]:
+            - /url: "#/list/2"
+            - text: 查看全部
+            - generic [ref=e310]: →
+        - generic [ref=e311]:
+          - article [ref=e312]:
+            - link "花生油 花生油" [ref=e313] [cursor=pointer]:
+              - /url: "#/detail/11"
+              - img "花生油" [ref=e315]
+              - heading "花生油" [level=3] [ref=e316]
+            - generic [ref=e317]:
+              - paragraph [ref=e318]: ¥62.20
+              - button "加入购物车 花生油" [ref=e319] [cursor=pointer]:
+                - img [ref=e320]
+          - article [ref=e323]:
+            - link "豆油 豆油" [ref=e324] [cursor=pointer]:
+              - /url: "#/detail/12"
+              - img "豆油" [ref=e326]
+              - heading "豆油" [level=3] [ref=e327]
+            - generic [ref=e328]:
+              - paragraph [ref=e329]: ¥62.80
+              - button "加入购物车 豆油" [ref=e330] [cursor=pointer]:
+                - img [ref=e331]
+          - article [ref=e334]:
+            - link "菜油 菜油" [ref=e335] [cursor=pointer]:
+              - /url: "#/detail/13"
+              - img "菜油" [ref=e337]
+              - heading "菜油" [level=3] [ref=e338]
+            - generic [ref=e339]:
+              - paragraph [ref=e340]: ¥61.00
+              - button "加入购物车 菜油" [ref=e341] [cursor=pointer]:
+                - img [ref=e342]
+          - article [ref=e345]:
+            - link "香油 香油" [ref=e346] [cursor=pointer]:
+              - /url: "#/detail/14"
+              - img "香油" [ref=e348]
+              - heading "香油" [level=3] [ref=e349]
+            - generic [ref=e350]:
+              - paragraph [ref=e351]: ¥62.80
+              - button "加入购物车 香油" [ref=e352] [cursor=pointer]:
+                - img [ref=e353]
+          - article [ref=e356]:
+            - link "棕榈油 棕榈油" [ref=e357] [cursor=pointer]:
+              - /url: "#/detail/15"
+              - img "棕榈油" [ref=e359]
+              - heading "棕榈油" [level=3] [ref=e360]
+            - generic [ref=e361]:
+              - paragraph [ref=e362]: ¥61.00
+              - button "加入购物车 棕榈油" [ref=e363] [cursor=pointer]:
+                - img [ref=e364]
+          - article [ref=e367]:
+            - link "粳米 粳米" [ref=e368] [cursor=pointer]:
+              - /url: "#/detail/16"
+              - img "粳米" [ref=e370]
+              - heading "粳米" [level=3] [ref=e371]
+            - generic [ref=e372]:
+              - paragraph [ref=e373]: ¥44.60
+              - button "加入购物车 粳米" [ref=e374] [cursor=pointer]:
+                - img [ref=e375]
+          - article [ref=e378]:
+            - link "籼米 籼米" [ref=e379] [cursor=pointer]:
+              - /url: "#/detail/17"
+              - img "籼米" [ref=e381]
+              - heading "籼米" [level=3] [ref=e382]
+            - generic [ref=e383]:
+              - paragraph [ref=e384]: ¥44.00
+              - button "加入购物车 籼米" [ref=e385] [cursor=pointer]:
+                - img [ref=e386]
+          - article [ref=e389]:
+            - link "面粉 面粉" [ref=e390] [cursor=pointer]:
+              - /url: "#/detail/18"
+              - img "面粉" [ref=e392]
+              - heading "面粉" [level=3] [ref=e393]
+            - generic [ref=e394]:
+              - paragraph [ref=e395]: ¥41.60
+              - button "加入购物车 面粉" [ref=e396] [cursor=pointer]:
+                - img [ref=e397]
+          - article [ref=e400]:
+            - link "大豆 大豆" [ref=e401] [cursor=pointer]:
+              - /url: "#/detail/19"
+              - img "大豆" [ref=e403]
+              - heading "大豆" [level=3] [ref=e404]
+            - generic [ref=e405]:
+              - paragraph [ref=e406]: ¥44.60
+              - button "加入购物车 大豆" [ref=e407] [cursor=pointer]:
+                - img [ref=e408]
+          - article [ref=e411]:
+            - link "红小豆 红小豆" [ref=e412] [cursor=pointer]:
+              - /url: "#/detail/20"
+              - img "红小豆" [ref=e414]
+              - heading "红小豆" [level=3] [ref=e415]
+            - generic [ref=e416]:
+              - paragraph [ref=e417]: ¥42.80
+              - button "加入购物车 红小豆" [ref=e418] [cursor=pointer]:
+                - img [ref=e419]
+      - generic [ref=e423]:
+        - generic [ref=e424]:
+          - heading "禽畜肉蛋" [level=2] [ref=e425]
+          - paragraph [ref=e426]:
+            - link "土猪肉" [ref=e427] [cursor=pointer]:
+              - /url: "#/list/15"
+            - link "·牛羊肉" [ref=e428] [cursor=pointer]:
+              - /url: "#/list/16"
+            - link "·土鸡土鸭" [ref=e429] [cursor=pointer]:
+              - /url: "#/list/17"
+            - link "·农家蛋" [ref=e430] [cursor=pointer]:
+              - /url: "#/list/18"
+        - link "查看全部" [ref=e431] [cursor=pointer]:
+          - /url: "#/list/3"
+          - text: 查看全部
+          - generic [ref=e432]: →
+      - generic [ref=e434]:
+        - generic [ref=e435]:
+          - heading "水产海鲜" [level=2] [ref=e436]
+          - paragraph [ref=e437]:
+            - link "淡水鱼虾" [ref=e438] [cursor=pointer]:
+              - /url: "#/list/19"
+            - link "·海鲜水产" [ref=e439] [cursor=pointer]:
+              - /url: "#/list/20"
+            - link "·干货海产" [ref=e440] [cursor=pointer]:
+              - /url: "#/list/21"
+        - link "查看全部" [ref=e441] [cursor=pointer]:
+          - /url: "#/list/4"
+          - text: 查看全部
+          - generic [ref=e442]: →
+      - generic [ref=e444]:
+        - generic [ref=e445]:
+          - heading "山珍菌菇" [level=2] [ref=e446]
+          - paragraph [ref=e447]:
+            - link "野生菌" [ref=e448] [cursor=pointer]:
+              - /url: "#/list/22"
+            - link "·干菌菇" [ref=e449] [cursor=pointer]:
+              - /url: "#/list/23"
+            - link "·竹笋山货" [ref=e450] [cursor=pointer]:
+              - /url: "#/list/24"
+        - link "查看全部" [ref=e451] [cursor=pointer]:
+          - /url: "#/list/5"
+          - text: 查看全部
+          - generic [ref=e452]: →
+      - generic [ref=e454]:
+        - generic [ref=e455]:
+          - heading "茶叶饮品" [level=2] [ref=e456]
+          - paragraph [ref=e457]:
+            - link "绿茶红茶" [ref=e458] [cursor=pointer]:
+              - /url: "#/list/25"
+            - link "·花茶养生茶" [ref=e459] [cursor=pointer]:
+              - /url: "#/list/26"
+            - link "·蜂蜜" [ref=e460] [cursor=pointer]:
+              - /url: "#/list/27"
+        - link "查看全部" [ref=e461] [cursor=pointer]:
+          - /url: "#/list/6"
+          - text: 查看全部
+          - generic [ref=e462]: →
+      - generic [ref=e464]:
+        - generic [ref=e465]:
+          - heading "农副加工" [level=2] [ref=e466]
+          - paragraph [ref=e467]:
+            - link "腊肉腊肠" [ref=e468] [cursor=pointer]:
+              - /url: "#/list/28"
+            - link "·腌菜酱菜" [ref=e469] [cursor=pointer]:
+              - /url: "#/list/29"
+            - link "·红薯粉豆制品" [ref=e470] [cursor=pointer]:
+              - /url: "#/list/30"
+            - link "·干货炒货" [ref=e471] [cursor=pointer]:
+              - /url: "#/list/31"
+        - link "查看全部" [ref=e472] [cursor=pointer]:
+          - /url: "#/list/7"
+          - text: 查看全部
+          - generic [ref=e473]: →
+      - generic [ref=e475]:
+        - generic [ref=e476]:
+          - heading "乡土特产" [level=2] [ref=e477]
+          - paragraph [ref=e478]:
+            - link "地方名优" [ref=e479] [cursor=pointer]:
+              - /url: "#/list/32"
+            - link "·手工艺品" [ref=e480] [cursor=pointer]:
+              - /url: "#/list/33"
+            - link "·农家自酿" [ref=e481] [cursor=pointer]:
+              - /url: "#/list/34"
+        - link "查看全部" [ref=e482] [cursor=pointer]:
+          - /url: "#/list/8"
+          - text: 查看全部
+          - generic [ref=e483]: →
+  - contentinfo [ref=e484]:
+    - paragraph [ref=e485]: 把好物,慢慢交给懂的人。
+    - generic [ref=e486]:
+      - generic [ref=e487]:
+        - heading "关于我们" [level=4] [ref=e488]
+        - list [ref=e489]:
+          - listitem [ref=e490]:
+            - link "品牌故事" [ref=e491] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e492]:
+            - link "产地溯源" [ref=e493] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e494]:
+            - link "人才招聘" [ref=e495] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e496]:
+            - link "联系我们" [ref=e497] [cursor=pointer]:
+              - /url: "#"
+      - generic [ref=e498]:
+        - heading "客户服务" [level=4] [ref=e499]
+        - list [ref=e500]:
+          - listitem [ref=e501]:
+            - link "配送说明" [ref=e502] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e503]:
+            - link "退换货政策" [ref=e504] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e505]:
+            - link "常见问题" [ref=e506] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e507]:
+            - link "免责条款" [ref=e508] [cursor=pointer]:
+              - /url: "#"
+      - generic [ref=e509]:
+        - heading "关注我们" [level=4] [ref=e510]
+        - list [ref=e511]:
+          - listitem [ref=e512]:
+            - link "微信" [ref=e513] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e514]
+              - generic [ref=e517]: 微信
+          - listitem [ref=e518]:
+            - link "微博" [ref=e519] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e520]
+              - generic [ref=e523]: 微博
+          - listitem [ref=e524]:
+            - link "小红书" [ref=e525] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e526]
+              - generic [ref=e529]: 小红书
+        - paragraph [ref=e530]: 服务时间 10:00 — 23:00
+      - generic [ref=e531]:
+        - heading "订阅时令信物" [level=4] [ref=e532]
+        - paragraph [ref=e533]: 每月一封,只讲产地、节气与餐桌
+        - generic [ref=e534]:
+          - textbox "请输入你的邮箱" [ref=e535]
+          - button "订阅" [ref=e536] [cursor=pointer]
+    - paragraph [ref=e538]: © 2021—2026 特产小店 · 版权所有 · 服务时间 10:00—23:00

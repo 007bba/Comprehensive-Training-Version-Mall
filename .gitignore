@@ -40,6 +40,8 @@ env-py3.8.2/
 
 # Django
 db.sqlite3
+myshop-api2/exports/
+myshop-api2/media/goods/images/demo_pfsc/
 
 # Node / Vue
 node_modules/

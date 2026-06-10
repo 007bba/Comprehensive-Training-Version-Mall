@@ -1,0 +1,17 @@
+- generic [ref=e5]:
+  - heading "商家登录" [level=2] [ref=e6]
+  - generic [ref=e7]:
+    - tablist [ref=e11]:
+      - tab "登录" [selected] [ref=e13]
+      - tab "注册" [ref=e14]
+    - generic [ref=e15]:
+      - tabpanel "登录" [ref=e16]:
+        - generic [ref=e17]:
+          - generic [ref=e20]:
+            - textbox "用户名/手机号" [ref=e21]
+            - generic [ref=e23]: 
+          - generic [ref=e26]:
+            - textbox "密码" [ref=e27]
+            - generic [ref=e29]: 
+          - button "登录" [ref=e32] [cursor=pointer]
+      - text:   

@@ -1,0 +1,943 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e6]: 2026年06月07日 星期日 农历四月廿二 本月21日夏至
+        - link "无障碍" [ref=e9] [cursor=pointer]:
+          - /url: javascript:void(0);
+      - generic [ref=e11]:
+        - generic [ref=e13]: 全国农产品批发市场价格信息系统
+        - generic [ref=e14]:
+          - generic [ref=e15] [cursor=pointer]: 登录
+          - generic [ref=e16] [cursor=pointer]: 注册
+        - text: 
+      - menubar [ref=e18]:
+        - menuitem "首页" [ref=e19] [cursor=pointer]
+        - menuitem "价格指数" [ref=e20] [cursor=pointer]
+        - menuitem "价格行情" [ref=e21] [cursor=pointer]
+        - menuitem "价格报送" [ref=e22] [cursor=pointer]
+        - menuitem "分析报告" [ref=e23] [cursor=pointer]
+        - menuitem "新闻资讯" [ref=e24] [cursor=pointer]
+        - menuitem "市场简介" [ref=e25] [cursor=pointer]
+        - menuitem "农产品展示" [ref=e26] [cursor=pointer]
+    - generic [ref=e27]:
+      - generic [ref=e28]:
+        - text: 当前位置：首页
+        - generic [ref=e29]: 
+        - text: 农产品展示
+      - generic [ref=e31]:
+        - generic [ref=e33]: 蔬菜
+        - generic [ref=e34]:
+          - generic [ref=e35]:
+            - text: 更多
+            - generic [ref=e36]: 
+          - text: 
+          - generic [ref=e37] [cursor=pointer]: 全部
+          - generic [ref=e38] [cursor=pointer]: 大白菜
+          - generic [ref=e39] [cursor=pointer]: 白菜
+          - generic [ref=e40] [cursor=pointer]: 结球甘蓝
+          - generic [ref=e41] [cursor=pointer]: 紫甘蓝
+          - generic [ref=e42] [cursor=pointer]: 花椰菜
+          - generic [ref=e43] [cursor=pointer]: 青花菜
+      - generic [ref=e45]:
+        - generic [ref=e47]: 水果
+        - generic [ref=e48]:
+          - generic [ref=e49]:
+            - text: 更多
+            - generic [ref=e50]: 
+          - text: 
+          - generic [ref=e51] [cursor=pointer]: 全部
+          - generic [ref=e52] [cursor=pointer]: 哈密瓜
+          - generic [ref=e53] [cursor=pointer]: 甜瓜
+          - generic [ref=e54] [cursor=pointer]: 菠萝
+          - generic [ref=e55] [cursor=pointer]: 火龙果
+          - generic [ref=e56] [cursor=pointer]: 榴莲
+          - generic [ref=e57] [cursor=pointer]: 荔枝
+      - generic [ref=e59]:
+        - generic [ref=e61]: 畜产品
+        - generic [ref=e62]:
+          - generic [ref=e63]:
+            - text: 更多
+            - generic [ref=e64]: 
+          - text: 
+          - generic [ref=e65] [cursor=pointer]: 全部
+          - generic [ref=e66] [cursor=pointer]: 猪后腿肌肉
+          - generic [ref=e67] [cursor=pointer]: 猪肉（白条猪）
+          - generic [ref=e68] [cursor=pointer]: 牛肉
+          - generic [ref=e69] [cursor=pointer]: 羊肉
+          - generic [ref=e70] [cursor=pointer]: 白条鸡
+          - generic [ref=e71] [cursor=pointer]: 活鸡
+      - generic [ref=e73]:
+        - generic [ref=e75]: 水产品
+        - generic [ref=e76]:
+          - generic [ref=e77]:
+            - text: 更多
+            - generic [ref=e78]: 
+          - text: 
+          - generic [ref=e79] [cursor=pointer]: 全部
+          - generic [ref=e80] [cursor=pointer]: 田螺
+          - generic [ref=e81] [cursor=pointer]: 鱿鱼
+          - generic [ref=e82] [cursor=pointer]: 墨鱼
+          - generic [ref=e83] [cursor=pointer]: 长蛸
+          - generic [ref=e84] [cursor=pointer]: 海蜇
+          - generic [ref=e85] [cursor=pointer]: 甲鱼
+      - generic [ref=e87]:
+        - generic [ref=e89]: 粮食
+        - generic [ref=e90]:
+          - generic [ref=e91]:
+            - text: 更多
+            - generic [ref=e92]: 
+          - text: 
+          - generic [ref=e93] [cursor=pointer]: 全部
+          - generic [ref=e94] [cursor=pointer]: 粳米
+          - generic [ref=e95] [cursor=pointer]: 籼米
+          - generic [ref=e96] [cursor=pointer]: 面粉
+          - generic [ref=e97] [cursor=pointer]: 大豆
+          - generic [ref=e98] [cursor=pointer]: 红小豆
+          - generic [ref=e99] [cursor=pointer]: 绿豆
+      - generic [ref=e101]:
+        - generic [ref=e103]: 油料
+        - generic [ref=e104]:
+          - text:  
+          - generic [ref=e105] [cursor=pointer]: 全部
+          - generic [ref=e106] [cursor=pointer]: 花生油
+          - generic [ref=e107] [cursor=pointer]: 豆油
+          - generic [ref=e108] [cursor=pointer]: 菜油
+          - generic [ref=e109] [cursor=pointer]: 香油
+          - generic [ref=e110] [cursor=pointer]: 棕榈油
+      - generic [ref=e129]:
+        - generic [ref=e131]:
+          - generic [ref=e133]:
+            - img [ref=e135]
+            - generic [ref=e136]: 菠萝
+          - generic [ref=e138] [cursor=pointer]: 点击查看详情
+        - generic [ref=e140]:
+          - generic [ref=e142]:
+            - img [ref=e144]
+            - generic [ref=e145]: 甜瓜
+          - generic [ref=e147] [cursor=pointer]: 点击查看详情
+        - generic [ref=e149]:
+          - generic [ref=e151]:
+            - img [ref=e153]
+            - generic [ref=e154]: 哈密瓜
+          - generic [ref=e156] [cursor=pointer]: 点击查看详情
+        - generic [ref=e158]:
+          - generic [ref=e160]:
+            - img [ref=e162]
+            - generic [ref=e163]: 火龙果
+          - generic [ref=e165] [cursor=pointer]: 点击查看详情
+        - generic [ref=e167]:
+          - generic [ref=e169]:
+            - img [ref=e171]
+            - generic [ref=e172]: 榴莲
+          - generic [ref=e174] [cursor=pointer]: 点击查看详情
+        - generic [ref=e176]:
+          - generic [ref=e178]:
+            - img [ref=e180]
+            - generic [ref=e181]: 荔枝
+          - generic [ref=e183] [cursor=pointer]: 点击查看详情
+        - generic [ref=e185]:
+          - generic [ref=e187]:
+            - img [ref=e189]
+            - generic [ref=e190]: 桂圆
+          - generic [ref=e192] [cursor=pointer]: 点击查看详情
+        - generic [ref=e194]:
+          - generic [ref=e196]:
+            - img [ref=e198]
+            - generic [ref=e199]: 柿子
+          - generic [ref=e201] [cursor=pointer]: 点击查看详情
+        - generic [ref=e203]:
+          - generic [ref=e205]:
+            - img [ref=e207]
+            - generic [ref=e208]: 石榴
+          - generic [ref=e210] [cursor=pointer]: 点击查看详情
+        - generic [ref=e212]:
+          - generic [ref=e214]:
+            - img [ref=e216]
+            - generic [ref=e217]: 山竹
+          - generic [ref=e219] [cursor=pointer]: 点击查看详情
+        - generic [ref=e221]:
+          - generic [ref=e223]:
+            - img [ref=e225]
+            - generic [ref=e226]: 甘蔗
+          - generic [ref=e228] [cursor=pointer]: 点击查看详情
+        - generic [ref=e230]:
+          - generic [ref=e232]:
+            - img [ref=e234]
+            - generic [ref=e235]: 田螺
+          - generic [ref=e237] [cursor=pointer]: 点击查看详情
+        - generic [ref=e239]:
+          - generic [ref=e241]:
+            - img [ref=e243]
+            - generic [ref=e244]: 鱿鱼
+          - generic [ref=e246] [cursor=pointer]: 点击查看详情
+        - generic [ref=e248]:
+          - generic [ref=e250]:
+            - img [ref=e252]
+            - generic [ref=e253]: 墨鱼
+          - generic [ref=e255] [cursor=pointer]: 点击查看详情
+        - generic [ref=e257]:
+          - generic [ref=e259]:
+            - img [ref=e261]
+            - generic [ref=e262]: 长蛸
+          - generic [ref=e264] [cursor=pointer]: 点击查看详情
+        - generic [ref=e266]:
+          - generic [ref=e268]:
+            - img [ref=e270]
+            - generic [ref=e271]: 海蜇
+          - generic [ref=e273] [cursor=pointer]: 点击查看详情
+        - generic [ref=e275]:
+          - generic [ref=e277]:
+            - img [ref=e279]
+            - generic [ref=e280]: 甲鱼
+          - generic [ref=e282] [cursor=pointer]: 点击查看详情
+        - generic [ref=e284]:
+          - generic [ref=e286]:
+            - img [ref=e288]
+            - generic [ref=e289]: 牛蛙
+          - generic [ref=e291] [cursor=pointer]: 点击查看详情
+        - generic [ref=e293]:
+          - generic [ref=e295]:
+            - img [ref=e297]
+            - generic [ref=e298]: 大白菜
+          - generic [ref=e300] [cursor=pointer]: 点击查看详情
+        - generic [ref=e302]:
+          - generic [ref=e304]:
+            - img [ref=e306]
+            - generic [ref=e307]: 白菜
+          - generic [ref=e309] [cursor=pointer]: 点击查看详情
+        - generic [ref=e311]:
+          - generic [ref=e313]:
+            - img [ref=e315]
+            - generic [ref=e316]: 结球甘蓝
+          - generic [ref=e318] [cursor=pointer]: 点击查看详情
+        - generic [ref=e320]:
+          - generic [ref=e322]:
+            - img [ref=e324]
+            - generic [ref=e325]: 紫甘蓝
+          - generic [ref=e327] [cursor=pointer]: 点击查看详情
+        - generic [ref=e329]:
+          - generic [ref=e331]:
+            - img [ref=e333]
+            - generic [ref=e334]: 花椰菜
+          - generic [ref=e336] [cursor=pointer]: 点击查看详情
+        - generic [ref=e338]:
+          - generic [ref=e340]:
+            - img [ref=e342]
+            - generic [ref=e343]: 青花菜
+          - generic [ref=e345] [cursor=pointer]: 点击查看详情
+        - generic [ref=e347]:
+          - generic [ref=e349]:
+            - img [ref=e351]
+            - generic [ref=e352]: 菠菜
+          - generic [ref=e354] [cursor=pointer]: 点击查看详情
+        - generic [ref=e356]:
+          - generic [ref=e358]:
+            - img [ref=e360]
+            - generic [ref=e361]: 莴笋
+          - generic [ref=e363] [cursor=pointer]: 点击查看详情
+        - generic [ref=e365]:
+          - generic [ref=e367]:
+            - img [ref=e369]
+            - generic [ref=e370]: 芹菜
+          - generic [ref=e372] [cursor=pointer]: 点击查看详情
+        - generic [ref=e374]:
+          - generic [ref=e376]:
+            - img [ref=e378]
+            - generic [ref=e379]: 茼蒿
+          - generic [ref=e381] [cursor=pointer]: 点击查看详情
+        - generic [ref=e383]:
+          - generic [ref=e385]:
+            - img [ref=e387]
+            - generic [ref=e388]: 茴香
+          - generic [ref=e390] [cursor=pointer]: 点击查看详情
+        - generic [ref=e392]:
+          - generic [ref=e394]:
+            - img [ref=e396]
+            - generic [ref=e397]: 油菜
+          - generic [ref=e399] [cursor=pointer]: 点击查看详情
+        - generic [ref=e401]:
+          - generic [ref=e403]:
+            - img [ref=e405]
+            - generic [ref=e406]: 油麦菜
+          - generic [ref=e408] [cursor=pointer]: 点击查看详情
+        - generic [ref=e410]:
+          - generic [ref=e412]:
+            - img [ref=e414]
+            - generic [ref=e415]: 苦菊
+          - generic [ref=e417] [cursor=pointer]: 点击查看详情
+        - generic [ref=e419]:
+          - generic [ref=e421]:
+            - img [ref=e423]
+            - generic [ref=e424]: 生菜
+          - generic [ref=e426] [cursor=pointer]: 点击查看详情
+        - generic [ref=e428]:
+          - generic [ref=e430]:
+            - img [ref=e432]
+            - generic [ref=e433]: 香菜
+          - generic [ref=e435] [cursor=pointer]: 点击查看详情
+        - generic [ref=e437]:
+          - generic [ref=e439]:
+            - img [ref=e441]
+            - generic [ref=e442]: 空心菜
+          - generic [ref=e444] [cursor=pointer]: 点击查看详情
+        - generic [ref=e446]:
+          - generic [ref=e448]:
+            - img [ref=e450]
+            - generic [ref=e451]: 番茄
+          - generic [ref=e453] [cursor=pointer]: 点击查看详情
+        - generic [ref=e455]:
+          - generic [ref=e457]:
+            - img [ref=e459]
+            - generic [ref=e460]: 樱桃番茄
+          - generic [ref=e462] [cursor=pointer]: 点击查看详情
+        - generic [ref=e464]:
+          - generic [ref=e466]:
+            - img [ref=e468]
+            - generic [ref=e469]: 茄子
+          - generic [ref=e471] [cursor=pointer]: 点击查看详情
+        - generic [ref=e473]:
+          - generic [ref=e475]:
+            - img [ref=e477]
+            - generic [ref=e478]: 辣椒
+          - generic [ref=e480] [cursor=pointer]: 点击查看详情
+        - generic [ref=e482]:
+          - generic [ref=e484]:
+            - img [ref=e486]
+            - generic [ref=e487]: 甜椒
+          - generic [ref=e489] [cursor=pointer]: 点击查看详情
+        - generic [ref=e491]:
+          - generic [ref=e493]:
+            - img [ref=e495]
+            - generic [ref=e496]: 毛豆
+          - generic [ref=e498] [cursor=pointer]: 点击查看详情
+        - generic [ref=e500]:
+          - generic [ref=e502]:
+            - img [ref=e504]
+            - generic [ref=e505]: 豇豆
+          - generic [ref=e507] [cursor=pointer]: 点击查看详情
+        - generic [ref=e509]:
+          - generic [ref=e511]:
+            - img [ref=e513]
+            - generic [ref=e514]: 扁豆
+          - generic [ref=e516] [cursor=pointer]: 点击查看详情
+        - generic [ref=e518]:
+          - generic [ref=e520]:
+            - img [ref=e522]
+            - generic [ref=e523]: 菜豆（宽荚绿黄皮菜豆）
+          - generic [ref=e525] [cursor=pointer]: 点击查看详情
+        - generic [ref=e527]:
+          - generic [ref=e529]:
+            - img [ref=e531]
+            - generic [ref=e532]: 绿豆芽
+          - generic [ref=e534] [cursor=pointer]: 点击查看详情
+        - generic [ref=e536]:
+          - generic [ref=e538]:
+            - img [ref=e540]
+            - generic [ref=e541]: 黄豆芽
+          - generic [ref=e543] [cursor=pointer]: 点击查看详情
+        - generic [ref=e545]:
+          - generic [ref=e547]:
+            - img [ref=e549]
+            - generic [ref=e550]: 黄瓜
+          - generic [ref=e552] [cursor=pointer]: 点击查看详情
+        - generic [ref=e554]:
+          - generic [ref=e556]:
+            - img [ref=e558]
+            - generic [ref=e559]: 西葫芦
+          - generic [ref=e561] [cursor=pointer]: 点击查看详情
+        - generic [ref=e563]:
+          - generic [ref=e565]:
+            - img [ref=e567]
+            - generic [ref=e568]: 丝瓜
+          - generic [ref=e570] [cursor=pointer]: 点击查看详情
+        - generic [ref=e572]:
+          - generic [ref=e574]:
+            - img [ref=e576]
+            - generic [ref=e577]: 南瓜
+          - generic [ref=e579] [cursor=pointer]: 点击查看详情
+        - generic [ref=e581]:
+          - generic [ref=e583]:
+            - img [ref=e585]
+            - generic [ref=e586]: 冬瓜
+          - generic [ref=e588] [cursor=pointer]: 点击查看详情
+        - generic [ref=e590]:
+          - generic [ref=e592]:
+            - img [ref=e594]
+            - generic [ref=e595]: 凉瓜
+          - generic [ref=e597] [cursor=pointer]: 点击查看详情
+        - generic [ref=e599]:
+          - generic [ref=e601]:
+            - img [ref=e603]
+            - generic [ref=e604]: 白萝卜
+          - generic [ref=e606] [cursor=pointer]: 点击查看详情
+        - generic [ref=e608]:
+          - generic [ref=e610]:
+            - img [ref=e612]
+            - generic [ref=e613]: 青萝卜
+          - generic [ref=e615] [cursor=pointer]: 点击查看详情
+        - generic [ref=e617]:
+          - generic [ref=e619]:
+            - img [ref=e621]
+            - generic [ref=e622]: 胡萝卜
+          - generic [ref=e624] [cursor=pointer]: 点击查看详情
+        - generic [ref=e626]:
+          - generic [ref=e628]:
+            - img [ref=e630]
+            - generic [ref=e631]: 土豆
+          - generic [ref=e633] [cursor=pointer]: 点击查看详情
+        - generic [ref=e635]:
+          - generic [ref=e637]:
+            - img [ref=e639]
+            - generic [ref=e640]: 芋
+          - generic [ref=e642] [cursor=pointer]: 点击查看详情
+        - generic [ref=e644]:
+          - generic [ref=e646]:
+            - img [ref=e648]
+            - generic [ref=e649]: 山药
+          - generic [ref=e651] [cursor=pointer]: 点击查看详情
+        - generic [ref=e653]:
+          - generic [ref=e655]:
+            - img [ref=e657]
+            - generic [ref=e658]: 香菇
+          - generic [ref=e660] [cursor=pointer]: 点击查看详情
+        - generic [ref=e662]:
+          - generic [ref=e664]:
+            - img [ref=e666]
+            - generic [ref=e667]: 平菇
+          - generic [ref=e669] [cursor=pointer]: 点击查看详情
+        - generic [ref=e671]:
+          - generic [ref=e673]:
+            - img [ref=e675]
+            - generic [ref=e676]: 金针菇
+          - generic [ref=e678] [cursor=pointer]: 点击查看详情
+        - generic [ref=e680]:
+          - generic [ref=e682]:
+            - img [ref=e684]
+            - generic [ref=e685]: 杏鲍菇
+          - generic [ref=e687] [cursor=pointer]: 点击查看详情
+        - generic [ref=e689]:
+          - generic [ref=e691]:
+            - img [ref=e693]
+            - generic [ref=e694]: 木耳
+          - generic [ref=e696] [cursor=pointer]: 点击查看详情
+        - generic [ref=e698]:
+          - generic [ref=e700]:
+            - img [ref=e702]
+            - generic [ref=e703]: 葱
+          - generic [ref=e705] [cursor=pointer]: 点击查看详情
+        - generic [ref=e707]:
+          - generic [ref=e709]:
+            - img [ref=e711]
+            - generic [ref=e712]: 洋葱
+          - generic [ref=e714] [cursor=pointer]: 点击查看详情
+        - generic [ref=e716]:
+          - generic [ref=e718]:
+            - img [ref=e720]
+            - generic [ref=e721]: 生姜
+          - generic [ref=e723] [cursor=pointer]: 点击查看详情
+        - generic [ref=e725]:
+          - generic [ref=e727]:
+            - img [ref=e729]
+            - generic [ref=e730]: 韭菜
+          - generic [ref=e732] [cursor=pointer]: 点击查看详情
+        - generic [ref=e734]:
+          - generic [ref=e736]:
+            - img [ref=e738]
+            - generic [ref=e739]: 大蒜
+          - generic [ref=e741] [cursor=pointer]: 点击查看详情
+        - generic [ref=e743]:
+          - generic [ref=e745]:
+            - img [ref=e747]
+            - generic [ref=e748]: 蒜苗
+          - generic [ref=e750] [cursor=pointer]: 点击查看详情
+        - generic [ref=e752]:
+          - generic [ref=e754]:
+            - img [ref=e756]
+            - generic [ref=e757]: 蒜黄
+          - generic [ref=e759] [cursor=pointer]: 点击查看详情
+        - generic [ref=e761]:
+          - generic [ref=e763]:
+            - img [ref=e765]
+            - generic [ref=e766]: 蒜薹
+          - generic [ref=e768] [cursor=pointer]: 点击查看详情
+        - generic [ref=e770]:
+          - generic [ref=e772]:
+            - img [ref=e774]
+            - generic [ref=e775]: 莲藕
+          - generic [ref=e777] [cursor=pointer]: 点击查看详情
+        - generic [ref=e779]:
+          - generic [ref=e781]:
+            - img [ref=e783]
+            - generic [ref=e784]: 菱角
+          - generic [ref=e786] [cursor=pointer]: 点击查看详情
+        - generic [ref=e788]:
+          - generic [ref=e790]:
+            - img [ref=e792]
+            - generic [ref=e793]: 鲜食玉米（糯玉米）
+          - generic [ref=e795] [cursor=pointer]: 点击查看详情
+        - generic [ref=e797]:
+          - generic [ref=e799]:
+            - img [ref=e801]
+            - generic [ref=e802]: 富士苹果
+          - generic [ref=e804] [cursor=pointer]: 点击查看详情
+        - generic [ref=e806]:
+          - generic [ref=e808]:
+            - img [ref=e810]
+            - generic [ref=e811]: 花牛苹果
+          - generic [ref=e813] [cursor=pointer]: 点击查看详情
+        - generic [ref=e815]:
+          - generic [ref=e817]:
+            - img [ref=e819]
+            - generic [ref=e820]: 黄元帅苹果
+          - generic [ref=e822] [cursor=pointer]: 点击查看详情
+        - generic [ref=e824]:
+          - generic [ref=e826]:
+            - img [ref=e828]
+            - generic [ref=e829]: 嘎拉苹果
+          - generic [ref=e831] [cursor=pointer]: 点击查看详情
+        - generic [ref=e833]:
+          - generic [ref=e835]:
+            - img [ref=e837]
+            - generic [ref=e838]: 国光苹果
+          - generic [ref=e840] [cursor=pointer]: 点击查看详情
+        - generic [ref=e842]:
+          - generic [ref=e844]:
+            - img [ref=e846]
+            - generic [ref=e847]: 水萝卜
+          - generic [ref=e849] [cursor=pointer]: 点击查看详情
+        - generic [ref=e851]:
+          - generic [ref=e853]:
+            - img [ref=e855]
+            - generic [ref=e856]: 樱桃萝卜
+          - generic [ref=e858] [cursor=pointer]: 点击查看详情
+        - generic [ref=e860]:
+          - generic [ref=e862]:
+            - img [ref=e864]
+            - generic [ref=e865]: 猪后腿肌肉
+          - generic [ref=e867] [cursor=pointer]: 点击查看详情
+        - generic [ref=e869]:
+          - generic [ref=e871]:
+            - img [ref=e873]
+            - generic [ref=e874]: 鸭梨
+          - generic [ref=e876] [cursor=pointer]: 点击查看详情
+        - generic [ref=e878]:
+          - generic [ref=e880]:
+            - img [ref=e882]
+            - generic [ref=e883]: 猪肉（白条猪）
+          - generic [ref=e885] [cursor=pointer]: 点击查看详情
+        - generic [ref=e887]:
+          - generic [ref=e889]:
+            - img [ref=e891]
+            - generic [ref=e892]: 牛肉
+          - generic [ref=e894] [cursor=pointer]: 点击查看详情
+        - generic [ref=e896]:
+          - generic [ref=e898]:
+            - img [ref=e900]
+            - generic [ref=e901]: 羊肉
+          - generic [ref=e903] [cursor=pointer]: 点击查看详情
+        - generic [ref=e905]:
+          - generic [ref=e907]:
+            - img [ref=e909]
+            - generic [ref=e910]: 白条鸡
+          - generic [ref=e912] [cursor=pointer]: 点击查看详情
+        - generic [ref=e914]:
+          - generic [ref=e916]:
+            - img [ref=e918]
+            - generic [ref=e919]: 活鸡
+          - generic [ref=e921] [cursor=pointer]: 点击查看详情
+        - generic [ref=e923]:
+          - generic [ref=e925]:
+            - img [ref=e927]
+            - generic [ref=e928]: 鸡蛋
+          - generic [ref=e930] [cursor=pointer]: 点击查看详情
+        - generic [ref=e932]:
+          - generic [ref=e934]:
+            - img [ref=e936]
+            - generic [ref=e937]: 花生油
+          - generic [ref=e939] [cursor=pointer]: 点击查看详情
+        - generic [ref=e941]:
+          - generic [ref=e943]:
+            - img [ref=e945]
+            - generic [ref=e946]: 豆油
+          - generic [ref=e948] [cursor=pointer]: 点击查看详情
+        - generic [ref=e950]:
+          - generic [ref=e952]:
+            - img [ref=e954]
+            - generic [ref=e955]: 菜油
+          - generic [ref=e957] [cursor=pointer]: 点击查看详情
+        - generic [ref=e959]:
+          - generic [ref=e961]:
+            - img [ref=e963]
+            - generic [ref=e964]: 香油
+          - generic [ref=e966] [cursor=pointer]: 点击查看详情
+        - generic [ref=e968]:
+          - generic [ref=e970]:
+            - img [ref=e972]
+            - generic [ref=e973]: 棕榈油
+          - generic [ref=e975] [cursor=pointer]: 点击查看详情
+        - generic [ref=e977]:
+          - generic [ref=e979]:
+            - img [ref=e981]
+            - generic [ref=e982]: 粳米
+          - generic [ref=e984] [cursor=pointer]: 点击查看详情
+        - generic [ref=e986]:
+          - generic [ref=e988]:
+            - img [ref=e990]
+            - generic [ref=e991]: 籼米
+          - generic [ref=e993] [cursor=pointer]: 点击查看详情
+        - generic [ref=e995]:
+          - generic [ref=e997]:
+            - img [ref=e999]
+            - generic [ref=e1000]: 面粉
+          - generic [ref=e1002] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1004]:
+          - generic [ref=e1006]:
+            - img [ref=e1008]
+            - generic [ref=e1009]: 大豆
+          - generic [ref=e1011] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1013]:
+          - generic [ref=e1015]:
+            - img [ref=e1017]
+            - generic [ref=e1018]: 红小豆
+          - generic [ref=e1020] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1022]:
+          - generic [ref=e1024]:
+            - img [ref=e1026]
+            - generic [ref=e1027]: 绿豆
+          - generic [ref=e1029] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1031]:
+          - generic [ref=e1033]:
+            - img [ref=e1035]
+            - generic [ref=e1036]: 玉米
+          - generic [ref=e1038] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1040]:
+          - generic [ref=e1042]:
+            - img [ref=e1044]
+            - generic [ref=e1045]: 花生
+          - generic [ref=e1047] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1049]:
+          - generic [ref=e1051]:
+            - img [ref=e1053]
+            - generic [ref=e1054]: 大黄鱼
+          - generic [ref=e1056] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1058]:
+          - generic [ref=e1060]:
+            - img [ref=e1062]
+            - generic [ref=e1063]: 小黄鱼
+          - generic [ref=e1065] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1067]:
+          - generic [ref=e1069]:
+            - img [ref=e1071]
+            - generic [ref=e1072]: 马鲛鱼
+          - generic [ref=e1074] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1076]:
+          - generic [ref=e1078]:
+            - img [ref=e1080]
+            - generic [ref=e1081]: 大带鱼
+          - generic [ref=e1083] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1085]:
+          - generic [ref=e1087]:
+            - img [ref=e1089]
+            - generic [ref=e1090]: 大菱鲆
+          - generic [ref=e1092] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1094]:
+          - generic [ref=e1096]:
+            - img [ref=e1098]
+            - generic [ref=e1099]: 鳜鱼
+          - generic [ref=e1101] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1103]:
+          - generic [ref=e1105]:
+            - img [ref=e1107]
+            - generic [ref=e1108]: 草鱼
+          - generic [ref=e1110] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1112]:
+          - generic [ref=e1114]:
+            - img [ref=e1116]
+            - generic [ref=e1117]: 鲤鱼
+          - generic [ref=e1119] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1121]:
+          - generic [ref=e1123]:
+            - img [ref=e1125]
+            - generic [ref=e1126]: 鲢鱼
+          - generic [ref=e1128] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1130]:
+          - generic [ref=e1132]:
+            - img [ref=e1134]
+            - generic [ref=e1135]: 鳙鱼
+          - generic [ref=e1137] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1139]:
+          - generic [ref=e1141]:
+            - img [ref=e1143]
+            - generic [ref=e1144]: 鲫鱼
+          - generic [ref=e1146] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1148]:
+          - generic [ref=e1150]:
+            - img [ref=e1152]
+            - generic [ref=e1153]: 乌鳢
+          - generic [ref=e1155] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1157]:
+          - generic [ref=e1159]:
+            - img [ref=e1161]
+            - generic [ref=e1162]: 罗非鱼
+          - generic [ref=e1164] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1166]:
+          - generic [ref=e1168]:
+            - img [ref=e1170]
+            - generic [ref=e1171]: 黄颡鱼
+          - generic [ref=e1173] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1175]:
+          - generic [ref=e1177]:
+            - img [ref=e1179]
+            - generic [ref=e1180]: 黄鳝
+          - generic [ref=e1182] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1184]:
+          - generic [ref=e1186]:
+            - img [ref=e1188]
+            - generic [ref=e1189]: 南美白对虾
+          - generic [ref=e1191] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1193]:
+          - generic [ref=e1195]:
+            - img [ref=e1197]
+            - generic [ref=e1198]: 基围虾（刀额新对虾）
+          - generic [ref=e1200] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1202]:
+          - generic [ref=e1204]:
+            - img [ref=e1206]
+            - generic [ref=e1207]: 斑节对虾
+          - generic [ref=e1209] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1211]:
+          - generic [ref=e1213]:
+            - img [ref=e1215]
+            - generic [ref=e1216]: 鹰爪虾
+          - generic [ref=e1218] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1220]:
+          - generic [ref=e1222]:
+            - img [ref=e1224]
+            - generic [ref=e1225]: 罗氏沼虾
+          - generic [ref=e1227] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1229]:
+          - generic [ref=e1231]:
+            - img [ref=e1233]
+            - generic [ref=e1234]: 青虾
+          - generic [ref=e1236] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1238]:
+          - generic [ref=e1240]:
+            - img [ref=e1242]
+            - generic [ref=e1243]: 虾蛄
+          - generic [ref=e1245] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1247]:
+          - generic [ref=e1249]:
+            - img [ref=e1251]
+            - generic [ref=e1252]: 梭子蟹
+          - generic [ref=e1254] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1256]:
+          - generic [ref=e1258]:
+            - img [ref=e1260]
+            - generic [ref=e1261]: 青蟹
+          - generic [ref=e1263] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1265]:
+          - generic [ref=e1267]:
+            - img [ref=e1269]
+            - generic [ref=e1270]: 中华绒螯蟹
+          - generic [ref=e1272] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1274]:
+          - generic [ref=e1276]:
+            - img [ref=e1278]
+            - generic [ref=e1279]: 鲍鱼（单壳）
+          - generic [ref=e1281] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1283]:
+          - generic [ref=e1285]:
+            - img [ref=e1287]
+            - generic [ref=e1288]: 扇贝
+          - generic [ref=e1290] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1292]:
+          - generic [ref=e1294]:
+            - img [ref=e1296]
+            - generic [ref=e1297]: 贻贝
+          - generic [ref=e1299] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1301]:
+          - generic [ref=e1303]:
+            - img [ref=e1305]
+            - generic [ref=e1306]: 蛏
+          - generic [ref=e1308] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1310]:
+          - generic [ref=e1312]:
+            - img [ref=e1314]
+            - generic [ref=e1315]: 牡蛎
+          - generic [ref=e1317] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1319]:
+          - generic [ref=e1321]:
+            - img [ref=e1323]
+            - generic [ref=e1324]: 丰水梨
+          - generic [ref=e1326] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1328]:
+          - generic [ref=e1330]:
+            - img [ref=e1332]
+            - generic [ref=e1333]: 皇冠梨
+          - generic [ref=e1335] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1337]:
+          - generic [ref=e1339]:
+            - img [ref=e1341]
+            - generic [ref=e1342]: 雪花梨
+          - generic [ref=e1344] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1346]:
+          - generic [ref=e1348]:
+            - img [ref=e1350]
+            - generic [ref=e1351]: 香梨
+          - generic [ref=e1353] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1355]:
+          - generic [ref=e1357]:
+            - img [ref=e1359]
+            - generic [ref=e1360]: 莱阳梨
+          - generic [ref=e1362] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1364]:
+          - generic [ref=e1366]:
+            - img [ref=e1368]
+            - generic [ref=e1369]: 水蜜桃
+          - generic [ref=e1371] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1373]:
+          - generic [ref=e1375]:
+            - img [ref=e1377]
+            - generic [ref=e1378]: 蟠桃
+          - generic [ref=e1380] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1382]:
+          - generic [ref=e1384]:
+            - img [ref=e1386]
+            - generic [ref=e1387]: 油桃
+          - generic [ref=e1389] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1391]:
+          - generic [ref=e1393]:
+            - img [ref=e1395]
+            - generic [ref=e1396]: 李子
+          - generic [ref=e1398] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1400]:
+          - generic [ref=e1402]:
+            - img [ref=e1404]
+            - generic [ref=e1405]: 樱桃
+          - generic [ref=e1407] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1409]:
+          - generic [ref=e1411]:
+            - img [ref=e1413]
+            - generic [ref=e1414]: 草莓
+          - generic [ref=e1416] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1418]:
+          - generic [ref=e1420]:
+            - img [ref=e1422]
+            - generic [ref=e1423]: 山楂
+          - generic [ref=e1425] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1427]:
+          - generic [ref=e1429]:
+            - img [ref=e1431]
+            - generic [ref=e1432]: 枇杷
+          - generic [ref=e1434] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1436]:
+          - generic [ref=e1438]:
+            - img [ref=e1440]
+            - generic [ref=e1441]: 蜜桔
+          - generic [ref=e1443] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1445]:
+          - generic [ref=e1447]:
+            - img [ref=e1449]
+            - generic [ref=e1450]: 砂糖桔
+          - generic [ref=e1452] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1454]:
+          - generic [ref=e1456]:
+            - img [ref=e1458]
+            - generic [ref=e1459]: 脐橙
+          - generic [ref=e1461] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1463]:
+          - generic [ref=e1465]:
+            - img [ref=e1467]
+            - generic [ref=e1468]: 柚子
+          - generic [ref=e1470] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1472]:
+          - generic [ref=e1474]:
+            - img [ref=e1476]
+            - generic [ref=e1477]: 柠檬
+          - generic [ref=e1479] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1481]:
+          - generic [ref=e1483]:
+            - img [ref=e1485]
+            - generic [ref=e1486]: 巨峰葡萄
+          - generic [ref=e1488] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1490]:
+          - generic [ref=e1492]:
+            - img [ref=e1494]
+            - generic [ref=e1495]: 红提
+          - generic [ref=e1497] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1499]:
+          - generic [ref=e1501]:
+            - img [ref=e1503]
+            - generic [ref=e1504]: 青提
+          - generic [ref=e1506] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1508]:
+          - generic [ref=e1510]:
+            - img [ref=e1512]
+            - generic [ref=e1513]: 玫瑰香葡萄
+          - generic [ref=e1515] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1517]:
+          - generic [ref=e1519]:
+            - img [ref=e1521]
+            - generic [ref=e1522]: 香蕉
+          - generic [ref=e1524] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1526]:
+          - generic [ref=e1528]:
+            - img [ref=e1530]
+            - generic [ref=e1531]: 猕猴桃
+          - generic [ref=e1533] [cursor=pointer]: 点击查看详情
+        - generic [ref=e1535]:
+          - generic [ref=e1537]:
+            - img [ref=e1539]
+            - generic [ref=e1540]: 西瓜
+          - generic [ref=e1542] [cursor=pointer]: 点击查看详情
+    - generic [ref=e111]:
+      - list [ref=e112]:
+        - listitem [ref=e113]: 关于网站
+        - listitem [ref=e114]: 网站声明
+        - listitem [ref=e115]: 网站地图
+        - listitem [ref=e116]: 联系我们
+        - listitem [ref=e117]: 访问分析
+      - generic [ref=e118]:
+        - generic [ref=e119]:
+          - img [ref=e120]
+          - img [ref=e121]
+          - img [ref=e122]
+        - generic [ref=e123]:
+          - paragraph [ref=e124]: 主办单位：农业农村部信息中心
+          - paragraph [ref=e125]: 京ICP备05039419号-1最佳浏览模式：1920 * 1080分辨率
+          - paragraph [ref=e126]: 网站保留所有权利，未经允许不得复制、镜像
+      - generic: 
+  - link "按回车键在新窗口打开无障碍说明页面,按Ctrl加波浪键打开导盲模式。" [ref=e127] [cursor=pointer]:
+    - /url: javascript:void(0);
+    - text: 按回车键在新窗口打开无障碍说明页面,按Ctrl+~键打开导盲模式。
+  - dialog "菠萝" [ref=e1547]:
+    - generic [ref=e1548]:
+      - text: 菠萝
+      - button "Close" [ref=e1549] [cursor=pointer]:
+        - generic [ref=e1550]: 
+    - generic [ref=e1552]:
+      - generic [ref=e1553]:
+        - generic [ref=e1554]: "名称:"
+        - text: 菠萝
+      - generic [ref=e1555]:
+        - generic [ref=e1556]: "别名:"
+        - text: 凤梨
+      - generic [ref=e1557]:
+        - generic [ref=e1558]: "英文名:"
+        - text: Pineapple
+      - generic [ref=e1559]:
+        - generic [ref=e1560]: "类型:"
+        - text: 水果
+      - generic [ref=e1561]:
+        - generic [ref=e1562]: "特征:"
+        - text: 果实中等大，平均单果重0.4—1.5kg。果形有筒形、圆锥形、揸腰形、近圆形。果肉有深黄色、黄色、淡黄色和淡黄白色，果肉较爽脆。果汁多，清甜，香味较浓。
+      - generic [ref=e1563]:
+        - generic [ref=e1564]: "图片:"
+        - generic [ref=e1565]:
+          - generic [ref=e1567]:
+            - img [ref=e1569]
+            - generic [ref=e1570]: 34-菠萝（黄色）.JPG
+          - generic [ref=e1572]:
+            - img [ref=e1574]
+            - generic [ref=e1575]: 34-菠萝（绿色）.JPG

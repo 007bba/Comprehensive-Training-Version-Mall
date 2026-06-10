@@ -151,14 +151,42 @@ DATABASE_URL=sqlite:///db.sqlite3
 ```text
 myshop-api2/db.sqlite3
 ```
-已经有postgresql的配置了，就在env文件中配好了，可以不用管。
-如果使用 PostgreSQL，例如 Supabase，可以配置：
+
+如果团队使用 Supabase PostgreSQL，不建议使用 `db.<project-ref>.supabase.co:5432`
+这种 Direct connection 地址。Supabase 的 Direct connection 通常只提供 IPv6，
+部分校园网、公司网络或家庭宽带无法稳定访问 IPv6 的 `5432` 端口，启动后端时会出现
+`connection timed out`。
+
+本项目推荐使用 Supabase 的 IPv4 Session Pooler 地址。在 Supabase 控制台中进入：
+
+```text
+Project Settings -> Database -> Connect -> Connection Pooler -> Session mode
+```
+
+然后把连接串写入 `myshop-api2/.env`：
 
 ```env
 DJANGO_SECRET_KEY=change-this-to-a-long-random-secret
 DJANGO_DEBUG=True
 DJANGO_ALLOWED_HOSTS=localhost,127.0.0.1
-DATABASE_URL=postgresql://用户名:密码@数据库地址:5432/数据库名?sslmode=require
+DATABASE_URL=postgresql://postgres.yjasqeagqsrgvzpryovv:你的数据库密码@aws-1-ap-northeast-2.pooler.supabase.com:5432/postgres?sslmode=require
+```
+
+说明：
+
+- 用户名格式是 `postgres.<project-ref>`，本项目的 project ref 是 `yjasqeagqsrgvzpryovv`。
+- Host 使用 `aws-1-ap-northeast-2.pooler.supabase.com`，这是 IPv4 pooler 地址。
+- 端口使用 `5432`，模式选择 `Session mode`。
+- `sslmode=require` 必须保留。
+- 不要把真实数据库密码提交到 Git。真实密码只放在本机 `myshop-api2/.env` 中。
+
+如果需要在 Conda 环境变量中保存连接串，也可以执行：
+
+```powershell
+conda activate shop-api
+conda env config vars set DATABASE_URL="postgresql://postgres.yjasqeagqsrgvzpryovv:你的数据库密码@aws-1-ap-northeast-2.pooler.supabase.com:5432/postgres?sslmode=require"
+conda deactivate
+conda activate shop-api
 ```
 
 生产环境请务必修改：
@@ -208,6 +236,59 @@ python manage.py runserver 0.0.0.0:8000
 Swagger 文档：http://localhost:8000/docs2/
 JWT 登录接口：http://localhost:8000/login/
 Token 认证接口：http://localhost:8000/api-token-auth/
+```
+
+### 8. 生成助农商品演示资料
+
+如果需要给演示环境准备助农商品数据，可以从农业农村部信息中心的
+“全国农产品批发市场价格信息系统（PFSC）”拉取农产品展示资料，并生成 CSV 和图片目录：
+
+```bash
+cd myshop-api2
+conda activate shop-api
+python scripts/export_pfsc_demo_assets.py
+```
+
+默认会生成：
+
+```text
+myshop-api2/exports/pfsc_demo_products/pfsc_demo_products.csv
+myshop-api2/exports/pfsc_demo_products/images/
+```
+
+默认范围是 `蔬菜`、`水果`、`粮食`、`油料`，每个类别 5 个商品，每个商品 1 张图片。
+可以通过参数调整：
+
+```bash
+python scripts/export_pfsc_demo_assets.py --categories 水果 蔬菜 粮食 --per-category 3 --images-per-product 1
+```
+
+注意：
+
+- 这些图片和资料只用于课程项目或内部演示。
+- CSV 中会记录图片来源和参考图片 URL。
+- 正式上线前应替换为商家实拍图、供应商授权图或其他明确授权图片。
+- 生成目录 `myshop-api2/exports/` 已加入 `.gitignore`，避免把演示图片误提交到仓库。
+
+确认 CSV 和图片后，可以导入数据库：
+
+```bash
+python scripts/import_pfsc_demo_products.py
+```
+
+默认会创建或复用演示商家：
+
+```text
+用户名：demo_merchant
+密码：Demo@123456
+店铺：助农演示店铺
+```
+
+导入脚本是幂等的：同一个演示商家下同名商品会更新，不会重复新增。
+如果需要重置演示商家的密码：
+
+```bash
+python scripts/import_pfsc_demo_products.py --reset-password
 ```
 
 ## 前端部署与启动
@@ -332,7 +413,7 @@ http://localhost:8080/
 DJANGO_SECRET_KEY=替换成强随机密钥
 DJANGO_DEBUG=False
 DJANGO_ALLOWED_HOSTS=你的域名,你的服务器IP
-DATABASE_URL=postgresql://用户名:密码@数据库地址:5432/数据库名?sslmode=require
+DATABASE_URL=postgresql://postgres.yjasqeagqsrgvzpryovv:你的数据库密码@aws-1-ap-northeast-2.pooler.supabase.com:5432/postgres?sslmode=require
 ```
 
 ### 2. 收集 Django 静态文件
@@ -481,6 +562,27 @@ DATABASE_URL=sqlite:///db.sqlite3
 ```
 
 或者删除 `DATABASE_URL`，项目会自动使用默认 SQLite。
+
+如果使用 Supabase，并看到类似错误：
+
+```text
+connection to server at "db.<project-ref>.supabase.co", port 5432 failed: Connection timed out
+```
+
+通常是 Direct connection 走 IPv6，而当前网络到 Supabase IPv6 的 `5432` 端口不通。
+请改用 Supabase Session Pooler 的 IPv4 连接串：
+
+```env
+DATABASE_URL=postgresql://postgres.yjasqeagqsrgvzpryovv:你的数据库密码@aws-1-ap-northeast-2.pooler.supabase.com:5432/postgres?sslmode=require
+```
+
+可以用 PowerShell 检查 pooler 是否可连：
+
+```powershell
+Test-NetConnection aws-1-ap-northeast-2.pooler.supabase.com -Port 5432
+```
+
+`TcpTestSucceeded` 为 `True` 表示网络层已连通。
 
 ### 3. 前端请求接口失败
 

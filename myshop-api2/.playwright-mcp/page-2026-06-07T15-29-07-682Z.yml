@@ -1,0 +1,434 @@
+- generic [ref=e33]:
+  - complementary [ref=e34]:
+    - generic [ref=e35]: 商家管理中心
+    - menubar [ref=e36]:
+      - menuitem " 数据概览" [ref=e37] [cursor=pointer]:
+        - generic [ref=e38]: 
+        - text: 数据概览
+      - menuitem " 商品管理" [active] [ref=e39] [cursor=pointer]:
+        - generic [ref=e40]: 
+        - text: 商品管理
+      - menuitem " 订单管理" [ref=e41] [cursor=pointer]:
+        - generic [ref=e42]: 
+        - text: 订单管理
+      - menuitem "店铺信息" [ref=e43] [cursor=pointer]: 店铺信息
+      - menuitem " 数据统计" [ref=e44] [cursor=pointer]:
+        - generic [ref=e45]: 
+        - text: 数据统计
+  - generic [ref=e46]:
+    - generic [ref=e47]:
+      - generic [ref=e48]: 商品管理
+      - generic [ref=e49]:
+        - text: demo_merchant
+        - button "退出登录" [ref=e50] [cursor=pointer]
+    - main [ref=e51]:
+      - generic [ref=e92]:
+        - generic [ref=e93]:
+          - generic [ref=e94]:
+            - textbox "搜索商品名称" [ref=e95]
+            - button "" [ref=e97] [cursor=pointer]:
+              - generic [ref=e98]: 
+          - button " 新增商品" [ref=e99] [cursor=pointer]:
+            - generic [ref=e100]: 
+            - text: 新增商品
+        - generic [ref=e101]:
+          - table [ref=e103]:
+            - rowgroup [ref=e115]:
+              - row "ID 主图 商品名称 分类 售价 市场价 库存 销量 状态" [ref=e116]:
+                - columnheader "ID" [ref=e117]:
+                  - generic [ref=e118]: ID
+                - columnheader "主图" [ref=e119]:
+                  - generic [ref=e120]: 主图
+                - columnheader "商品名称" [ref=e121]:
+                  - generic [ref=e122]: 商品名称
+                - columnheader "分类" [ref=e123]:
+                  - generic [ref=e124]: 分类
+                - columnheader "售价" [ref=e125]:
+                  - generic [ref=e126]: 售价
+                - columnheader "市场价" [ref=e127]:
+                  - generic [ref=e128]: 市场价
+                - columnheader "库存" [ref=e129]:
+                  - generic [ref=e130]: 库存
+                - columnheader "销量" [ref=e131]:
+                  - generic [ref=e132]: 销量
+                - columnheader "状态" [ref=e133]:
+                  - generic [ref=e134]: 状态
+                - columnheader [ref=e135]
+          - table [ref=e170]:
+            - rowgroup [ref=e182]:
+              - row "20 红小豆 粮食 42.80 50.50 100 0 上架" [ref=e183]:
+                - cell "20" [ref=e184]:
+                  - generic [ref=e185]: "20"
+                - cell [ref=e186]:
+                  - img [ref=e189]
+                - cell "红小豆" [ref=e190]:
+                  - generic [ref=e191]: 红小豆
+                - cell "粮食" [ref=e192]:
+                  - generic [ref=e193]: 粮食
+                - cell "42.80" [ref=e194]:
+                  - generic [ref=e195]: "42.80"
+                - cell "50.50" [ref=e196]:
+                  - generic [ref=e197]: "50.50"
+                - cell "100" [ref=e198]:
+                  - generic [ref=e199]: "100"
+                - cell "0" [ref=e200]:
+                  - generic [ref=e201]: "0"
+                - cell "上架" [ref=e202]:
+                  - generic [ref=e204]: 上架
+                - cell [ref=e205]
+              - row "19 大豆 粮食 44.60 52.63 100 0 上架" [ref=e206]:
+                - cell "19" [ref=e207]:
+                  - generic [ref=e208]: "19"
+                - cell [ref=e209]:
+                  - img [ref=e212]
+                - cell "大豆" [ref=e213]:
+                  - generic [ref=e214]: 大豆
+                - cell "粮食" [ref=e215]:
+                  - generic [ref=e216]: 粮食
+                - cell "44.60" [ref=e217]:
+                  - generic [ref=e218]: "44.60"
+                - cell "52.63" [ref=e219]:
+                  - generic [ref=e220]: "52.63"
+                - cell "100" [ref=e221]:
+                  - generic [ref=e222]: "100"
+                - cell "0" [ref=e223]:
+                  - generic [ref=e224]: "0"
+                - cell "上架" [ref=e225]:
+                  - generic [ref=e227]: 上架
+                - cell [ref=e228]
+              - row "18 面粉 粮食 41.60 49.09 100 0 上架" [ref=e229]:
+                - cell "18" [ref=e230]:
+                  - generic [ref=e231]: "18"
+                - cell [ref=e232]:
+                  - img [ref=e235]
+                - cell "面粉" [ref=e236]:
+                  - generic [ref=e237]: 面粉
+                - cell "粮食" [ref=e238]:
+                  - generic [ref=e239]: 粮食
+                - cell "41.60" [ref=e240]:
+                  - generic [ref=e241]: "41.60"
+                - cell "49.09" [ref=e242]:
+                  - generic [ref=e243]: "49.09"
+                - cell "100" [ref=e244]:
+                  - generic [ref=e245]: "100"
+                - cell "0" [ref=e246]:
+                  - generic [ref=e247]: "0"
+                - cell "上架" [ref=e248]:
+                  - generic [ref=e250]: 上架
+                - cell [ref=e251]
+              - row "17 籼米 粮食 44.00 51.92 100 0 上架" [ref=e252]:
+                - cell "17" [ref=e253]:
+                  - generic [ref=e254]: "17"
+                - cell [ref=e255]:
+                  - img [ref=e258]
+                - cell "籼米" [ref=e259]:
+                  - generic [ref=e260]: 籼米
+                - cell "粮食" [ref=e261]:
+                  - generic [ref=e262]: 粮食
+                - cell "44.00" [ref=e263]:
+                  - generic [ref=e264]: "44.00"
+                - cell "51.92" [ref=e265]:
+                  - generic [ref=e266]: "51.92"
+                - cell "100" [ref=e267]:
+                  - generic [ref=e268]: "100"
+                - cell "0" [ref=e269]:
+                  - generic [ref=e270]: "0"
+                - cell "上架" [ref=e271]:
+                  - generic [ref=e273]: 上架
+                - cell [ref=e274]
+              - row "16 粳米 粮食 44.60 52.63 100 0 上架" [ref=e275]:
+                - cell "16" [ref=e276]:
+                  - generic [ref=e277]: "16"
+                - cell [ref=e278]:
+                  - img [ref=e281]
+                - cell "粳米" [ref=e282]:
+                  - generic [ref=e283]: 粳米
+                - cell "粮食" [ref=e284]:
+                  - generic [ref=e285]: 粮食
+                - cell "44.60" [ref=e286]:
+                  - generic [ref=e287]: "44.60"
+                - cell "52.63" [ref=e288]:
+                  - generic [ref=e289]: "52.63"
+                - cell "100" [ref=e290]:
+                  - generic [ref=e291]: "100"
+                - cell "0" [ref=e292]:
+                  - generic [ref=e293]: "0"
+                - cell "上架" [ref=e294]:
+                  - generic [ref=e296]: 上架
+                - cell [ref=e297]
+              - row "15 棕榈油 油料 61.00 71.98 100 0 上架" [ref=e298]:
+                - cell "15" [ref=e299]:
+                  - generic [ref=e300]: "15"
+                - cell [ref=e301]:
+                  - img [ref=e304]
+                - cell "棕榈油" [ref=e305]:
+                  - generic [ref=e306]: 棕榈油
+                - cell "油料" [ref=e307]:
+                  - generic [ref=e308]: 油料
+                - cell "61.00" [ref=e309]:
+                  - generic [ref=e310]: "61.00"
+                - cell "71.98" [ref=e311]:
+                  - generic [ref=e312]: "71.98"
+                - cell "100" [ref=e313]:
+                  - generic [ref=e314]: "100"
+                - cell "0" [ref=e315]:
+                  - generic [ref=e316]: "0"
+                - cell "上架" [ref=e317]:
+                  - generic [ref=e319]: 上架
+                - cell [ref=e320]
+              - row "14 香油 油料 62.80 74.10 100 0 上架" [ref=e321]:
+                - cell "14" [ref=e322]:
+                  - generic [ref=e323]: "14"
+                - cell [ref=e324]:
+                  - img [ref=e327]
+                - cell "香油" [ref=e328]:
+                  - generic [ref=e329]: 香油
+                - cell "油料" [ref=e330]:
+                  - generic [ref=e331]: 油料
+                - cell "62.80" [ref=e332]:
+                  - generic [ref=e333]: "62.80"
+                - cell "74.10" [ref=e334]:
+                  - generic [ref=e335]: "74.10"
+                - cell "100" [ref=e336]:
+                  - generic [ref=e337]: "100"
+                - cell "0" [ref=e338]:
+                  - generic [ref=e339]: "0"
+                - cell "上架" [ref=e340]:
+                  - generic [ref=e342]: 上架
+                - cell [ref=e343]
+              - row "13 菜油 油料 61.00 71.98 100 0 上架" [ref=e344]:
+                - cell "13" [ref=e345]:
+                  - generic [ref=e346]: "13"
+                - cell [ref=e347]:
+                  - img [ref=e350]
+                - cell "菜油" [ref=e351]:
+                  - generic [ref=e352]: 菜油
+                - cell "油料" [ref=e353]:
+                  - generic [ref=e354]: 油料
+                - cell "61.00" [ref=e355]:
+                  - generic [ref=e356]: "61.00"
+                - cell "71.98" [ref=e357]:
+                  - generic [ref=e358]: "71.98"
+                - cell "100" [ref=e359]:
+                  - generic [ref=e360]: "100"
+                - cell "0" [ref=e361]:
+                  - generic [ref=e362]: "0"
+                - cell "上架" [ref=e363]:
+                  - generic [ref=e365]: 上架
+                - cell [ref=e366]
+              - row "12 豆油 油料 62.80 74.10 100 0 上架" [ref=e367]:
+                - cell "12" [ref=e368]:
+                  - generic [ref=e369]: "12"
+                - cell [ref=e370]:
+                  - img [ref=e373]
+                - cell "豆油" [ref=e374]:
+                  - generic [ref=e375]: 豆油
+                - cell "油料" [ref=e376]:
+                  - generic [ref=e377]: 油料
+                - cell "62.80" [ref=e378]:
+                  - generic [ref=e379]: "62.80"
+                - cell "74.10" [ref=e380]:
+                  - generic [ref=e381]: "74.10"
+                - cell "100" [ref=e382]:
+                  - generic [ref=e383]: "100"
+                - cell "0" [ref=e384]:
+                  - generic [ref=e385]: "0"
+                - cell "上架" [ref=e386]:
+                  - generic [ref=e388]: 上架
+                - cell [ref=e389]
+              - row "11 花生油 油料 62.20 73.40 100 0 上架" [ref=e390]:
+                - cell "11" [ref=e391]:
+                  - generic [ref=e392]: "11"
+                - cell [ref=e393]:
+                  - img [ref=e396]
+                - cell "花生油" [ref=e397]:
+                  - generic [ref=e398]: 花生油
+                - cell "油料" [ref=e399]:
+                  - generic [ref=e400]: 油料
+                - cell "62.20" [ref=e401]:
+                  - generic [ref=e402]: "62.20"
+                - cell "73.40" [ref=e403]:
+                  - generic [ref=e404]: "73.40"
+                - cell "100" [ref=e405]:
+                  - generic [ref=e406]: "100"
+                - cell "0" [ref=e407]:
+                  - generic [ref=e408]: "0"
+                - cell "上架" [ref=e409]:
+                  - generic [ref=e411]: 上架
+                - cell [ref=e412]
+          - generic [ref=e139]:
+            - table [ref=e141]:
+              - rowgroup [ref=e153]:
+                - row "操作" [ref=e154]:
+                  - columnheader [ref=e155]
+                  - columnheader [ref=e156]
+                  - columnheader [ref=e157]
+                  - columnheader [ref=e158]
+                  - columnheader [ref=e159]
+                  - columnheader [ref=e160]
+                  - columnheader [ref=e161]
+                  - columnheader [ref=e162]
+                  - columnheader [ref=e163]
+                  - columnheader "操作" [ref=e164]:
+                    - generic [ref=e165]: 操作
+            - table [ref=e414]:
+              - rowgroup [ref=e426]:
+                - row "编辑 下架 删除" [ref=e427]:
+                  - cell [ref=e428]
+                  - cell [ref=e429]
+                  - cell [ref=e430]
+                  - cell [ref=e431]
+                  - cell [ref=e432]
+                  - cell [ref=e433]
+                  - cell [ref=e434]
+                  - cell [ref=e435]
+                  - cell [ref=e436]
+                  - cell "编辑 下架 删除" [ref=e437]:
+                    - generic [ref=e438]:
+                      - button "编辑" [ref=e439] [cursor=pointer]
+                      - button "下架" [ref=e440] [cursor=pointer]
+                      - button "删除" [ref=e441] [cursor=pointer]
+                - row "编辑 下架 删除" [ref=e442]:
+                  - cell [ref=e443]
+                  - cell [ref=e444]
+                  - cell [ref=e445]
+                  - cell [ref=e446]
+                  - cell [ref=e447]
+                  - cell [ref=e448]
+                  - cell [ref=e449]
+                  - cell [ref=e450]
+                  - cell [ref=e451]
+                  - cell "编辑 下架 删除" [ref=e452]:
+                    - generic [ref=e453]:
+                      - button "编辑" [ref=e454] [cursor=pointer]
+                      - button "下架" [ref=e455] [cursor=pointer]
+                      - button "删除" [ref=e456] [cursor=pointer]
+                - row "编辑 下架 删除" [ref=e457]:
+                  - cell [ref=e458]
+                  - cell [ref=e459]
+                  - cell [ref=e460]
+                  - cell [ref=e461]
+                  - cell [ref=e462]
+                  - cell [ref=e463]
+                  - cell [ref=e464]
+                  - cell [ref=e465]
+                  - cell [ref=e466]
+                  - cell "编辑 下架 删除" [ref=e467]:
+                    - generic [ref=e468]:
+                      - button "编辑" [ref=e469] [cursor=pointer]
+                      - button "下架" [ref=e470] [cursor=pointer]
+                      - button "删除" [ref=e471] [cursor=pointer]
+                - row "编辑 下架 删除" [ref=e472]:
+                  - cell [ref=e473]
+                  - cell [ref=e474]
+                  - cell [ref=e475]
+                  - cell [ref=e476]
+                  - cell [ref=e477]
+                  - cell [ref=e478]
+                  - cell [ref=e479]
+                  - cell [ref=e480]
+                  - cell [ref=e481]
+                  - cell "编辑 下架 删除" [ref=e482]:
+                    - generic [ref=e483]:
+                      - button "编辑" [ref=e484] [cursor=pointer]
+                      - button "下架" [ref=e485] [cursor=pointer]
+                      - button "删除" [ref=e486] [cursor=pointer]
+                - row "编辑 下架 删除" [ref=e487]:
+                  - cell [ref=e488]
+                  - cell [ref=e489]
+                  - cell [ref=e490]
+                  - cell [ref=e491]
+                  - cell [ref=e492]
+                  - cell [ref=e493]
+                  - cell [ref=e494]
+                  - cell [ref=e495]
+                  - cell [ref=e496]
+                  - cell "编辑 下架 删除" [ref=e497]:
+                    - generic [ref=e498]:
+                      - button "编辑" [ref=e499] [cursor=pointer]
+                      - button "下架" [ref=e500] [cursor=pointer]
+                      - button "删除" [ref=e501] [cursor=pointer]
+                - row "编辑 下架 删除" [ref=e502]:
+                  - cell [ref=e503]
+                  - cell [ref=e504]
+                  - cell [ref=e505]
+                  - cell [ref=e506]
+                  - cell [ref=e507]
+                  - cell [ref=e508]
+                  - cell [ref=e509]
+                  - cell [ref=e510]
+                  - cell [ref=e511]
+                  - cell "编辑 下架 删除" [ref=e512]:
+                    - generic [ref=e513]:
+                      - button "编辑" [ref=e514] [cursor=pointer]
+                      - button "下架" [ref=e515] [cursor=pointer]
+                      - button "删除" [ref=e516] [cursor=pointer]
+                - row "编辑 下架 删除" [ref=e517]:
+                  - cell [ref=e518]
+                  - cell [ref=e519]
+                  - cell [ref=e520]
+                  - cell [ref=e521]
+                  - cell [ref=e522]
+                  - cell [ref=e523]
+                  - cell [ref=e524]
+                  - cell [ref=e525]
+                  - cell [ref=e526]
+                  - cell "编辑 下架 删除" [ref=e527]:
+                    - generic [ref=e528]:
+                      - button "编辑" [ref=e529] [cursor=pointer]
+                      - button "下架" [ref=e530] [cursor=pointer]
+                      - button "删除" [ref=e531] [cursor=pointer]
+                - row "编辑 下架 删除" [ref=e532]:
+                  - cell [ref=e533]
+                  - cell [ref=e534]
+                  - cell [ref=e535]
+                  - cell [ref=e536]
+                  - cell [ref=e537]
+                  - cell [ref=e538]
+                  - cell [ref=e539]
+                  - cell [ref=e540]
+                  - cell [ref=e541]
+                  - cell "编辑 下架 删除" [ref=e542]:
+                    - generic [ref=e543]:
+                      - button "编辑" [ref=e544] [cursor=pointer]
+                      - button "下架" [ref=e545] [cursor=pointer]
+                      - button "删除" [ref=e546] [cursor=pointer]
+                - row "编辑 下架 删除" [ref=e547]:
+                  - cell [ref=e548]
+                  - cell [ref=e549]
+                  - cell [ref=e550]
+                  - cell [ref=e551]
+                  - cell [ref=e552]
+                  - cell [ref=e553]
+                  - cell [ref=e554]
+                  - cell [ref=e555]
+                  - cell [ref=e556]
+                  - cell "编辑 下架 删除" [ref=e557]:
+                    - generic [ref=e558]:
+                      - button "编辑" [ref=e559] [cursor=pointer]
+                      - button "下架" [ref=e560] [cursor=pointer]
+                      - button "删除" [ref=e561] [cursor=pointer]
+                - row "编辑 下架 删除" [ref=e562]:
+                  - cell [ref=e563]
+                  - cell [ref=e564]
+                  - cell [ref=e565]
+                  - cell [ref=e566]
+                  - cell [ref=e567]
+                  - cell [ref=e568]
+                  - cell [ref=e569]
+                  - cell [ref=e570]
+                  - cell [ref=e571]
+                  - cell "编辑 下架 删除" [ref=e572]:
+                    - generic [ref=e573]:
+                      - button "编辑" [ref=e574] [cursor=pointer]
+                      - button "下架" [ref=e575] [cursor=pointer]
+                      - button "删除" [ref=e576] [cursor=pointer]
+        - generic [ref=e577]:
+          - generic [ref=e578]: 共 20 条
+          - button "" [disabled] [ref=e579]:
+            - generic [ref=e580]: 
+          - list [ref=e581]:
+            - listitem [ref=e582]: "1"
+            - listitem [ref=e583] [cursor=pointer]: "2"
+          - button "" [ref=e584] [cursor=pointer]:
+            - generic [ref=e585]: 
