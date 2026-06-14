@@ -1,0 +1,41 @@
+- generic [ref=e3]:
+  - complementary [ref=e4]:
+    - generic [ref=e5]: 商家管理中心
+    - menubar [ref=e6]:
+      - menuitem " 数据概览" [ref=e7] [cursor=pointer]:
+        - generic [ref=e8]: 
+        - text: 数据概览
+      - menuitem " 商品管理" [ref=e9] [cursor=pointer]:
+        - generic [ref=e10]: 
+        - text: 商品管理
+      - menuitem " 订单管理" [ref=e11] [cursor=pointer]:
+        - generic [ref=e12]: 
+        - text: 订单管理
+      - menuitem "店铺信息" [ref=e13] [cursor=pointer]: 店铺信息
+      - menuitem " 数据统计" [ref=e14] [cursor=pointer]:
+        - generic [ref=e15]: 
+        - text: 数据统计
+  - generic [ref=e16]:
+    - generic [ref=e17]:
+      - generic [ref=e18]: 店铺信息
+      - generic [ref=e19]:
+        - text: preview
+        - button "退出登录" [ref=e20] [cursor=pointer]
+    - main [ref=e21]:
+      - generic [ref=e49]:
+        - generic [ref=e51]: 创建店铺
+        - generic [ref=e53]:
+          - generic [ref=e54]:
+            - generic [ref=e55]: "*店铺名称"
+            - textbox "请输入店铺名称" [ref=e58]
+          - generic [ref=e59]:
+            - generic [ref=e60]: 店铺Logo
+            - generic [ref=e61]:
+              - generic [ref=e62]:
+                - list
+                - generic [ref=e64] [cursor=pointer]: 
+              - generic [ref=e65]: 仅支持 JPG/PNG，大小不超过 2MB
+          - generic [ref=e66]:
+            - generic [ref=e67]: 店铺描述
+            - textbox "请输入店铺描述" [ref=e70]
+          - button "创建店铺" [ref=e73] [cursor=pointer]

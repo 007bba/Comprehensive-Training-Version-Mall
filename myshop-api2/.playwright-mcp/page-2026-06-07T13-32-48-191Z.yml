@@ -1,0 +1,128 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e6]: 2026年06月07日 星期日 农历四月廿二 本月21日夏至
+        - link "无障碍" [ref=e9] [cursor=pointer]:
+          - /url: javascript:void(0);
+      - generic [ref=e11]:
+        - generic [ref=e13]: 全国农产品批发市场价格信息系统
+        - generic [ref=e14]:
+          - generic [ref=e15] [cursor=pointer]: 登录
+          - generic [ref=e16] [cursor=pointer]: 注册
+        - text: 
+      - menubar [ref=e18]:
+        - menuitem "首页" [ref=e19] [cursor=pointer]
+        - menuitem "价格指数" [ref=e20] [cursor=pointer]
+        - menuitem "价格行情" [ref=e21] [cursor=pointer]
+        - menuitem "价格报送" [ref=e22] [cursor=pointer]
+        - menuitem "分析报告" [ref=e23] [cursor=pointer]
+        - menuitem "新闻资讯" [ref=e24] [cursor=pointer]
+        - menuitem "市场简介" [ref=e25] [cursor=pointer]
+        - menuitem "农产品展示" [ref=e26] [cursor=pointer]
+    - generic [ref=e27]:
+      - generic [ref=e28]:
+        - text: 当前位置：首页
+        - generic [ref=e29]: 
+        - text: 农产品展示
+      - generic [ref=e31]:
+        - generic [ref=e33]: 蔬菜
+        - generic [ref=e34]:
+          - generic [ref=e35]:
+            - text: 更多
+            - generic [ref=e36]: 
+          - text: 
+          - generic [ref=e37] [cursor=pointer]: 全部
+          - generic [ref=e38] [cursor=pointer]: 大白菜
+          - generic [ref=e39] [cursor=pointer]: 白菜
+          - generic [ref=e40] [cursor=pointer]: 结球甘蓝
+          - generic [ref=e41] [cursor=pointer]: 紫甘蓝
+          - generic [ref=e42] [cursor=pointer]: 花椰菜
+          - generic [ref=e43] [cursor=pointer]: 青花菜
+      - generic [ref=e45]:
+        - generic [ref=e47]: 水果
+        - generic [ref=e48]:
+          - generic [ref=e49]:
+            - text: 更多
+            - generic [ref=e50]: 
+          - text: 
+          - generic [ref=e51] [cursor=pointer]: 全部
+          - generic [ref=e52] [cursor=pointer]: 哈密瓜
+          - generic [ref=e53] [cursor=pointer]: 甜瓜
+          - generic [ref=e54] [cursor=pointer]: 菠萝
+          - generic [ref=e55] [cursor=pointer]: 火龙果
+          - generic [ref=e56] [cursor=pointer]: 榴莲
+          - generic [ref=e57] [cursor=pointer]: 荔枝
+      - generic [ref=e59]:
+        - generic [ref=e61]: 畜产品
+        - generic [ref=e62]:
+          - generic [ref=e63]:
+            - text: 更多
+            - generic [ref=e64]: 
+          - text: 
+          - generic [ref=e65] [cursor=pointer]: 全部
+          - generic [ref=e66] [cursor=pointer]: 猪后腿肌肉
+          - generic [ref=e67] [cursor=pointer]: 猪肉（白条猪）
+          - generic [ref=e68] [cursor=pointer]: 牛肉
+          - generic [ref=e69] [cursor=pointer]: 羊肉
+          - generic [ref=e70] [cursor=pointer]: 白条鸡
+          - generic [ref=e71] [cursor=pointer]: 活鸡
+      - generic [ref=e73]:
+        - generic [ref=e75]: 水产品
+        - generic [ref=e76]:
+          - generic [ref=e77]:
+            - text: 更多
+            - generic [ref=e78]: 
+          - text: 
+          - generic [ref=e79] [cursor=pointer]: 全部
+          - generic [ref=e80] [cursor=pointer]: 田螺
+          - generic [ref=e81] [cursor=pointer]: 鱿鱼
+          - generic [ref=e82] [cursor=pointer]: 墨鱼
+          - generic [ref=e83] [cursor=pointer]: 长蛸
+          - generic [ref=e84] [cursor=pointer]: 海蜇
+          - generic [ref=e85] [cursor=pointer]: 甲鱼
+      - generic [ref=e87]:
+        - generic [ref=e89]: 粮食
+        - generic [ref=e90]:
+          - generic [ref=e91]:
+            - text: 更多
+            - generic [ref=e92]: 
+          - text: 
+          - generic [ref=e93] [cursor=pointer]: 全部
+          - generic [ref=e94] [cursor=pointer]: 粳米
+          - generic [ref=e95] [cursor=pointer]: 籼米
+          - generic [ref=e96] [cursor=pointer]: 面粉
+          - generic [ref=e97] [cursor=pointer]: 大豆
+          - generic [ref=e98] [cursor=pointer]: 红小豆
+          - generic [ref=e99] [cursor=pointer]: 绿豆
+      - generic [ref=e101]:
+        - generic [ref=e103]: 油料
+        - generic [ref=e104]:
+          - text:  
+          - generic [ref=e105] [cursor=pointer]: 全部
+          - generic [ref=e106] [cursor=pointer]: 花生油
+          - generic [ref=e107] [cursor=pointer]: 豆油
+          - generic [ref=e108] [cursor=pointer]: 菜油
+          - generic [ref=e109] [cursor=pointer]: 香油
+          - generic [ref=e110] [cursor=pointer]: 棕榈油
+      - text: 
+    - generic [ref=e111]:
+      - list [ref=e112]:
+        - listitem [ref=e113]: 关于网站
+        - listitem [ref=e114]: 网站声明
+        - listitem [ref=e115]: 网站地图
+        - listitem [ref=e116]: 联系我们
+        - listitem [ref=e117]: 访问分析
+      - generic [ref=e118]:
+        - generic [ref=e119]:
+          - img [ref=e120]
+          - img [ref=e121]
+          - img [ref=e122]
+        - generic [ref=e123]:
+          - paragraph [ref=e124]: 主办单位：农业农村部信息中心
+          - paragraph [ref=e125]: 京ICP备05039419号-1最佳浏览模式：1920 * 1080分辨率
+          - paragraph [ref=e126]: 网站保留所有权利，未经允许不得复制、镜像
+      - generic: 
+  - link "按回车键在新窗口打开无障碍说明页面,按Ctrl加波浪键打开导盲模式。" [ref=e127] [cursor=pointer]:
+    - /url: javascript:void(0);
+    - text: 按回车键在新窗口打开无障碍说明页面,按Ctrl+~键打开导盲模式。

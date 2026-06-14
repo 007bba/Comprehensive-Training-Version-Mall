@@ -146,14 +146,16 @@ export default {
     },
   methods:{
       getData(){
-        getUsersByID().then((response)=>{
+        const userId = this.$store.state.userinfo.id;
+        getUsersByID(userId).then((response)=>{
           this.userinfo=response.data.data;
         }).catch(function(error){
           console.log(error);
         })
       },
       updateUserinfo(){
-        updateUsers(this.userinfo).then((response)=>{
+        const userId = this.$store.state.userinfo.id;
+        updateUsers(userId, this.userinfo).then((response)=>{
           alert('修改成功')
         }).catch(function(error){
           console.log(error);

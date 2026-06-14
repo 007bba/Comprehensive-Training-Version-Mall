@@ -80,6 +80,9 @@ export default {
         } else if (Array.isArray(res.data)) {
           this.goodsList = res.data
           this.total = res.data.length
+        } else if (Array.isArray(res)) {
+          this.goodsList = res
+          this.total = res.length
         }
       } catch (e) {} finally {
         this.loading = false

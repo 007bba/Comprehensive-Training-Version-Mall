@@ -66,8 +66,13 @@ export default {
         this.loading = true
         try {
           const res = await login(this.loginForm)
+          // 检查用户角色，只有 role=1（商家）才能登录商家端
+          if (res.role !== 1) {
+            this.$message.error('该账号不是商家账号，无权访问商家后台。请先在商家端注册。')
+            return
+          }
           const token = res.token
-          this.$store.dispatch('login', { token, user: { username: this.loginForm.username } })
+          this.$store.dispatch('login', { token, user: { id: res.id, username: res.username, role: res.role } })
           this.$message.success('登录成功')
           this.$router.push(this.$route.query.redirect || '/dashboard')
         } catch (e) {

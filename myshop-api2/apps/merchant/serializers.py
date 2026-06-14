@@ -1,3 +1,7 @@
+import os
+from urllib.parse import urlparse
+
+from django.conf import settings
 from rest_framework import serializers
 from .models import Shop
 from apps.goods.models import Goods, GoodsCategory
@@ -28,11 +32,44 @@ class MerchantRegSerializer(serializers.ModelSerializer):
 class ShopSerializer(serializers.ModelSerializer):
     """店铺信息序列化器"""
     merchant_name = serializers.CharField(source='merchant.username', read_only=True)
+    logo = serializers.CharField(required=False, allow_blank=True, allow_null=True)
 
     class Meta:
         model = Shop
         fields = '__all__'
         read_only_fields = ('merchant',)
+
+    def validate_logo(self, value):
+        if not value:
+            return value
+
+        path = urlparse(value).path if value.startswith(('http://', 'https://')) else value
+        if path.startswith(settings.MEDIA_URL):
+            path = path[len(settings.MEDIA_URL):]
+
+        path = path.lstrip('/')
+        normalized_path = os.path.normpath(path).replace('\\', '/')
+        if normalized_path == '..' or normalized_path.startswith('../'):
+            raise serializers.ValidationError('Logo地址不合法')
+
+        return normalized_path
+
+    def to_representation(self, instance):
+        data = super().to_representation(instance)
+        if instance.logo:
+            try:
+                url = instance.logo.url
+            except ValueError:
+                url = settings.MEDIA_URL + str(instance.logo).lstrip('/')
+
+            request = self.context.get('request')
+            if request and url.startswith('/'):
+                url = request.build_absolute_uri(url)
+            data['logo'] = url
+        else:
+            data['logo'] = ''
+
+        return data
 
     def create(self, validated_data):
         validated_data['merchant'] = self.context['request'].user

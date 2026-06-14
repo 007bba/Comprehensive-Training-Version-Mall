@@ -114,6 +114,7 @@ dmypy.json
 .pyre/
 
 .vscode
-migrations
 .idea
+
+# Django migrations are part of the application schema and should be tracked.
 
