@@ -2,7 +2,7 @@ import os
 from uuid import uuid4
 
 from django.core.files.storage import default_storage
-from django.db.models import Sum, Count
+from django.db.models import Sum, Count, F
 from django.shortcuts import get_object_or_404
 from rest_framework import viewsets, status, mixins
 from rest_framework.decorators import action
@@ -189,13 +189,23 @@ class MerchantStatsView(mixins.ListModelMixin, viewsets.GenericViewSet):
         user = request.user
         my_goods = Goods.objects.filter(user=user)
 
-        # 本店商品对应的订单商品明细
-        my_order_goods = OrderGoods.objects.filter(goods__in=my_goods)
+        # 只统计已支付及以上状态的订单（排除待支付和已取消）
+        valid_order_ids = Order.objects.filter(
+            order_state__in=['payed', 'shipping', 'complete']
+        ).values_list('id', flat=True)
+
+        # 本店商品对应的有效订单商品明细
+        my_order_goods = OrderGoods.objects.filter(
+            goods__in=my_goods,
+            order_id__in=valid_order_ids
+        )
+
+        # 销售额 = 单价 × 数量（而非仅取 price 字段）
         total_sales = my_order_goods.aggregate(
-            total=Sum('price')
+            total=Sum(F('price') * F('goods_num'))
         )['total'] or 0
 
-        # 订单数
+        # 订单数（去重）
         order_ids = my_order_goods.values_list('order_id', flat=True).distinct()
         total_orders = order_ids.count()
 

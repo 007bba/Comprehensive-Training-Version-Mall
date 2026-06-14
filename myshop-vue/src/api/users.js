@@ -16,24 +16,24 @@ export function reg(data) {
   })
 }
 
-export function getUsersByID() {
+export function getUsersByID(userId) {
   return request({
-    url: '/users/1/',
+    url: '/users/' + userId + '/',
     method: 'get',
   })
 }
 
-export function updateUsers(data) {
+export function updateUsers(userId, data) {
   return request({
-    url: '/users/1/',
+    url: '/users/' + userId + '/',
     method: 'patch',
     data
   })
 }
 
-export function updatePwd(data) {
+export function updatePwd(userId, data) {
   return request({
-    url: '/users/1/',
+    url: '/users/' + userId + '/',
     method: 'patch',
     data
   })

@@ -53,3 +53,5 @@ myshop-merchant-vue/dist/
 # Local backup of previous nested repositories
 .git-backup*/
 **/.git-backup*/
+
+nul

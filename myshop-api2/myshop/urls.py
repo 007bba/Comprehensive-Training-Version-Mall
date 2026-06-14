@@ -3,7 +3,7 @@ from django.urls import path,include,re_path
 from django.views.static import serve
 from django.conf import settings
 from rest_framework.authtoken.views import obtain_auth_token
-from rest_framework_jwt.views import obtain_jwt_token
+from rest_framework_jwt.views import obtain_jwt_token, refresh_jwt_token
 from rest_framework.documentation import include_docs_urls
 from rest_framework.schemas import get_schema_view
 from rest_framework_swagger.renderers import SwaggerUIRenderer, OpenAPICodec
@@ -21,6 +21,7 @@ urlpatterns = [
     path('ckeditor/',include('ckeditor_uploader.urls')),
     path('api-token-auth/', obtain_auth_token),
     path('login/', obtain_jwt_token),
+    path('token-refresh/', refresh_jwt_token),
     path('docs/', include_docs_urls(title="我的商城")),
     path('docs2/', schema_view, name='docs'),
     path('', include('django_prometheus.urls')),

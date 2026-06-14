@@ -1,7 +1,7 @@
 <template>
   <div>
     <div style="margin-bottom:16px;display:flex;justify-content:space-between">
-      <el-select v-model="orderState" placeholder="订单状态" clearable style="width:200px" @change="fetchOrders">
+      <el-select v-model="orderState" placeholder="订单状态" clearable style="width:200px" @change="handleFilterChange">
         <el-option label="待支付" value="paying" />
         <el-option label="已支付" value="payed" />
         <el-option label="配送中" value="shipping" />
@@ -89,6 +89,10 @@ export default {
     },
     handlePageChange(val) {
       this.page = val
+      this.fetchOrders()
+    },
+    handleFilterChange() {
+      this.page = 1
       this.fetchOrders()
     },
     async handleShip(row) {

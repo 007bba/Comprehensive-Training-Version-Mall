@@ -3,7 +3,7 @@
     <el-aside width="220px" style="background-color: #304156">
       <div class="logo">商家管理中心</div>
       <el-menu
-        :default-active="$route.path"
+        :default-active="activeMenu"
         background-color="#304156"
         text-color="#bfcbd9"
         active-text-color="#409EFF"
@@ -53,6 +53,12 @@ export default {
   computed: {
     user() {
       return this.$store.state.user
+    },
+    activeMenu() {
+      // 取路由的第一段作为菜单高亮 key，例如 /goods/add → /goods
+      const path = this.$route.path
+      const match = path.match(/^\/[^/]+/)
+      return match ? match[0] : path
     }
   },
   methods: {
